@@ -107,7 +107,7 @@ h5 {
 	color:#505050;
 }
 
-/*Positioning*/
+/*****Positioning****/
 .right {
   float: right;
 }
@@ -119,7 +119,8 @@ h5 {
 	text-align: center;
 }
 
-/*Global Button Styles*/
+
+/****Global Button Styles*****/
 .btn-main {
 	text-transform: uppercase;
 	padding:14px 28px;
@@ -139,7 +140,7 @@ h5 {
 		text-transform: uppercase;
 	padding:14px 28px;
 	letter-spacing:.1em;
-		border: solid 1.5px #000;
+		border: solid 1px #000;
 	margin:4px 4px 0 0;
 	cursor: pointer;
 	border-radius:0;
@@ -167,7 +168,7 @@ input.input-box {
 
 
 /*checkbox label*/
-.container {
+.checkbox-label-container {
   display: block;
   position: relative;
   margin-bottom: 10px;
@@ -191,12 +192,44 @@ input[type="checkbox"] {
 
 	/**********MAIN CONTENT STYLES*********/
 	section#main-content{	
-  padding:10% 20%;
+  padding:10% 15%;
 		}
+
+.flex-row {
+display: flex;
+}
+
+.flex-column-half {
+width: 50%;
+}
+	
+	
 /*form styling*/
 	
 	input.input-box {
 	min-width:300px;
+	}
+	
+	
+			input.item-number-input {
+	width:30px;
+				height:30px;
+			padding:5px;
+			 position: relative;
+		border: solid #646464 1px;
+	border-radius:0;
+  background-color:transparent;
+  /* Adjusts the ; of the checkboxes on the text baseline */ 
+    vertical-align: -5px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color:#000;
+	}
+	.item-number-label {
+		  display: inline;
+  position: relative;
+  margin-bottom: 10px;
+	padding-top: 3px;
+    font-size: 14px;
 	}
 	
 input[type="checkbox"] {
@@ -245,12 +278,18 @@ input[type="checkbox"]:disabled {
 	
 /**********************MOBILE ONLY********************/
 @media screen and (max-width: 728px) {
+	
 	/**********MAIN CONTENT STYLES*********/
-
 		section#main-content{	
   padding:15px 25px;
 		}
-	
+	.flex-column-half {
+  display: block;
+}
+	.product-image {
+	max-width: 100%;
+	}
+
 	
 	/*form styling*/
 	input.input-box {
@@ -279,4 +318,24 @@ input[type="checkbox"]:disabled {
     position: relative;
     vertical-align: middle;
     width: 60px;
+}
+
+
+/***********************PAGE SPECIFIC CLASSES - PRODUCT PAGES***********************/
+
+.product-image {
+    height: auto;
+    width: 100%;
+}
+
+.product-text-column {
+	padding:40px;
+}
+
+.product-description {
+	margin-bottom:30px;
+}
+
+.product-property {
+	margin-bottom:15px;
 }
