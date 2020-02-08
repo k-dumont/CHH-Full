@@ -31,7 +31,7 @@ a.nav-link {
 }
 
 
-/**********************DESKTOP/TABLET ONLY********************/
+/**********************DESKTOP/TABLET ONLY HEADER STYLES********************/
 @media screen and (min-width: 729px) {
 
 	
@@ -79,7 +79,7 @@ a.nav-link:hover {
 	}
 }
 
-/**********************MOBILE ONLY********************/
+/**********************MOBILE ONLY HEADER STYLES********************/
 @media screen and (max-width: 728px) {
 
 	.mobile-header-spacer {
@@ -166,6 +166,61 @@ a.nav-link:hover {
 }
 
 /**********END HEADER STYLES**********/
+
+
+
+/**********FOOTER STYLES**********/
+
+#footer .social-icon {
+	padding-right:15px;
+	font-size: 18px;
+}
+
+#footer-logo {
+	margin-bottom:10px;
+}
+.footer-wrapper {
+	display:flex;
+	padding:60px 60px;
+	background-color:#0F0F10;
+}
+
+.footer-column {
+	width: 25%;
+		color:white;
+}
+
+.footer-column li {
+	text-transform:uppercase;
+	letter-spacing: .1em;
+	font-size:12px;
+}
+.footer-column h5 {
+	text-transform: uppercase;
+	font-weight:600;
+	letter-spacing:.1em;
+	font-size:15px;
+}
+.footer-column a {
+	color:white;
+}
+.footer-column a:hover {
+	color:#97d2da;
+}
+
+
+/**********************MOBILE ONLY FOOTER STYLES********************/
+@media screen and (max-width: 728px) {
+.footer-wrapper {
+	display:block;
+	}
+	
+	.footer-column {	
+display:block;
+	width:100%;
+		padding-top:30px;
+	}
+}
 
 
 

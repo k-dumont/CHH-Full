@@ -79,6 +79,18 @@ h5 {
 		font-size:1.1em;
 }
 
+p.legal-text {
+	font-size:10px;
+	letter-spacing: .1em;
+	font-weight: 300;
+}
+
+.spacer-small {
+height:15px;
+}
+.spacer-med {
+height:50px;
+}
 
 /*********USEFUL REUSABLE CLASSES*******/
 /*Fonts*/
@@ -187,6 +199,28 @@ input[type="checkbox"] {
 }
 
 
+
+			input.item-number-input {
+	width:30px;
+				height:30px;
+			padding:5px;
+			 position: relative;
+		border: solid #646464 1px;
+	border-radius:0;
+  background-color:transparent;
+  /* Adjusts the ; of the checkboxes on the text baseline */ 
+    vertical-align: -5px;
+  /* Set here so that Windows' High-Contrast Mode can override */
+  color:#000;
+	}
+	.item-number-label {
+		  display: inline;
+  position: relative;
+  margin-bottom: 10px;
+	padding-top: 3px;
+    font-size: 14px;
+	}
+
 /**********************DESKTOP/TABLET ONLY********************/
 @media screen and (min-width: 729px) {
 
@@ -209,28 +243,7 @@ width: 50%;
 	input.input-box {
 	min-width:300px;
 	}
-	
-	
-			input.item-number-input {
-	width:30px;
-				height:30px;
-			padding:5px;
-			 position: relative;
-		border: solid #646464 1px;
-	border-radius:0;
-  background-color:transparent;
-  /* Adjusts the ; of the checkboxes on the text baseline */ 
-    vertical-align: -5px;
-  /* Set here so that Windows' High-Contrast Mode can override */
-  color:#000;
-	}
-	.item-number-label {
-		  display: inline;
-  position: relative;
-  margin-bottom: 10px;
-	padding-top: 3px;
-    font-size: 14px;
-	}
+
 	
 input[type="checkbox"] {
   -webkit-appearance: none;
@@ -321,7 +334,17 @@ input[type="checkbox"]:disabled {
 }
 
 
-/***********************PAGE SPECIFIC CLASSES - PRODUCT PAGES***********************/
+/***********************PAGE SPECIFIC CLASSES - PRODUCT GRID***********************/
+.product-grid-wrapper {
+	display:flex;
+}
+.product-grid-column {
+	width:33%;
+	padding:40px;
+}
+
+/***********************PAGE SPECIFIC CLASSES - PRODUCT INDIVIDUAL***********************/
+
 
 .product-image {
     height: auto;
@@ -336,6 +359,10 @@ input[type="checkbox"]:disabled {
 	margin-bottom:30px;
 }
 
-.product-property {
+div.product-property {
+	margin-bottom:15px;
+}
+
+div.product-property {
 	margin-bottom:15px;
 }
