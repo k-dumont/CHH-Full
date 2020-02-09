@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
 	font-size:2.3em;
+
 }
 h2 {
 	font-weight: 700;
@@ -90,11 +91,23 @@ p.legal-text {
 	font-weight: 300;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .spacer-small {
 height:15px;
 }
 .spacer-med {
 height:50px;
+}
+
+section#main-content a {
+	font-weight:600;
+	color:#2da0b0;
+}
+section#main-content a:hover {
+		color: #97d2da;
 }
 
 /*********USEFUL REUSABLE CLASSES*******/
@@ -242,7 +255,18 @@ display: flex;
 width: 50%;
 }
 	
+	.vert-center {
+		align-items:center;
+	}
 	
+	/**********GENERAL LAYOUT STYLING***********/
+.text-column {
+	padding:40px;
+}
+
+.image-column {
+
+}	
 /*form styling*/
 	
 	input.input-box {
@@ -304,10 +328,6 @@ input[type="checkbox"]:disabled {
 	.flex-column-half {
   display: block;
 }
-	.product-image {
-	max-width: 100%;
-	}
-
 	
 	/*form styling*/
 	input.input-box {
@@ -348,16 +368,19 @@ input[type="checkbox"]:disabled {
 	padding:40px;
 }
 
+
 /***********************PAGE SPECIFIC CLASSES - PRODUCT INDIVIDUAL***********************/
 
 
 .product-image {
     height: auto;
     width: 100%;
+		max-width: 100%;
 }
 
 .product-text-column {
 	padding:40px;
+		font-size:.9em;
 }
 
 .product-description {
