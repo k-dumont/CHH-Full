@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	text-decoration: none;
 }
- HTML5 display-role reset for older browsers 
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -48,6 +48,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*ADDED TO THE RESET BY KAT*/
+html {
+  box-sizing: border-box;
 }
 /*****************************END MEYER RESET*************************/
 
@@ -294,7 +299,7 @@ input[type="checkbox"]:disabled {
 	
 	/**********MAIN CONTENT STYLES*********/
 		section#main-content{	
-  padding:15px 25px;
+  padding:15px 25px 35px;
 		}
 	.flex-column-half {
   display: block;
