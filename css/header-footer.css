@@ -96,15 +96,52 @@
 		display:none;
 	} 
 	
+div#aboveNavLinks {
+align-items: center;
+	display: flex;
+	height:30px;
+    background-color: #97d2da;
+	position:relative;
+	width:100%;
+		justify-content: flex-end;
+}
+	
+		
+	div#aboveNavLinks li {
+  display: inline-flex;
+		float:right;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+	text-transform: capitalize;
+	letter-spacing: .05em;
+  font-size: 13px;
+	font-weight: 600;
+}
+	div#aboveNavLinks li a {
+	  color: #fff;
+	}
+	
+	div#aboveNavLinks .social-icon {
+		color:#fff;
+	margin-left: 20px;
+	position:absolute;
+		left:0;
+	}
+	div#aboveNavLinks .social-icon:nth-child(2) {
+		left:60px;
+	}
+	
+	
 .topnav {
 	justify-content: flex-end;
 align-items: center;
 	display: flex;
-	height:100px;
+	height:80px;
 }
 	
 #header-logo {
-	padding:20px 25px;
+	padding:50px 20px;
 position: absolute;
     left: 0;
 	top:0;
