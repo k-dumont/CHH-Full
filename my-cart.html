@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+	<title>My Cart</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+	
+	<section id="main-content">
+		<h4>To register for Clinical Hemp Health, please complete the form below.</h4>
+		<form id="registration-form">
+		  <span class="form-label uppercase">First Name*</span><br>
+		  <input class="input-box" type="text" name="first_name"><br>
+			 <span class="form-label uppercase">Last Name*</span><br>
+		  <input class="input-box" type="text" name="last_name"><br>
+			 <span class="form-label uppercase">Email*</span><br>
+		  <input class="input-box" type="email" name="email"><br>
+				 <span class="form-label uppercase">Password*</span><br>
+		  <input class="input-box" type="password" name="password"><br>
+			  <label class="checkbox-label-container">
+						<input type="checkbox" name="legal_age" value="Yes"> I confirm I am of legal age in the province I reside
+				</label>
+			 <label class="checkbox-label-container">
+						<input type="checkbox" name="legal_age" value="Yes"> I agree to the Clinical Hemp Health Terms of Service and Privacy Policy
+				</label>
+
+			<button type="submit" class="btn-main">Register</button>
+</form>
+		<div class="text-in-divider-div">
+			<span class="text-in-divider">&nbsp;OR&nbsp;</span></div>
+<p class="font-size-sml grey-dark">Already have an account? <a href="/login">Login Now!</a></p>
+	</section>
+	
+	
+</body>
+	<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
+</html>
