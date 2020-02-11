@@ -53,6 +53,7 @@ table {
 /*ADDED TO THE RESET BY KAT*/
 html {
   box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 /*****************************END MEYER RESET*************************/
 
@@ -115,6 +116,24 @@ section#main-content a:hover {
 	color:#1F1F20;
 	font-weight: 100;
 }
+
+
+/**********GLOBAL GENERAL LAYOUT STYLES*********/
+
+.full-width-content {
+	margin-bottom:40px;
+}
+
+	.background-image-column {
+		min-height:250px;
+		background-size:cover;
+		background-position: center;
+	}
+	
+	.background-image-column.about1 {
+		background-image: url(../img/product.jpg);
+		height: auto;
+	} 
 
 /*********USEFUL REUSABLE CLASSES*******/
 /*Fonts*/
@@ -222,8 +241,6 @@ input[type="checkbox"] {
 		margin-right:8px;
 }
 
-
-
 			input.item-number-input {
 	width:30px;
 				height:30px;
@@ -248,7 +265,7 @@ input[type="checkbox"] {
 /**********************DESKTOP/TABLET ONLY********************/
 @media screen and (min-width: 729px) {
 
-	/**********MAIN CONTENT STYLES*********/
+	/**********DESKTOP/TABLET GENERAL LAYOUT STYLES*********/
 	section#main-content{	
   padding:7% 11%;
 		}
@@ -261,17 +278,23 @@ display: flex;
 width: 50%;
 }
 	
+	.flex-column-third {
+		width:33%;
+	}
+	
+	.anchor-links	.flex-column-third {
+		height:50px;
+	}
+	
 	.vert-center {
 		align-items:center;
 	}
 	
-	/**********GENERAL LAYOUT STYLING***********/
 .text-column {
 	padding:60px;
 }
 
-
-/*form styling*/
+/*desktop/tablet form styling*/
 	
 	input.input-box {
 	min-width:300px;
@@ -325,7 +348,7 @@ input[type="checkbox"]:disabled {
 /**********************MOBILE ONLY********************/
 @media screen and (max-width: 728px) {
 	
-	/**********MAIN CONTENT STYLES*********/
+	/**********MOBILE GENERAL LAYOUT STYLES*********/
 		section#main-content{	
   padding:15px 25px 35px;
 		}
