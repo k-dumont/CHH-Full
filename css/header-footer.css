@@ -75,6 +75,7 @@
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
+	text-transform: capitalize;
   float: none;
   color: black;
   padding: 12px 16px;
@@ -244,7 +245,7 @@ position: absolute;
 /**********************DESKTOP ONLY FOOTER STYLES********************/
 @media screen and (min-width: 728px) {
 	.footer-wrapper {
-		padding:60px 60px;
+  padding:7% 11%;
 }
 }
 
