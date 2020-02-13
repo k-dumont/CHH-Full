@@ -9,54 +9,100 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--Navigation bar-->
-    <div id="nav-placeholder">
-
-    </div>
-
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
-    </script>
-    <!--end of Navigation bar-->
-	
+    
 	<section id="main-content">
-		<h4>To register for Clinical Hemp Health, please complete the form below.</h4>
-		<form id="registration-form">
-		  <span class="form-label uppercase">First Name*</span><br>
-		  <input class="input-box" type="text" name="first_name"><br>
-			 <span class="form-label uppercase">Last Name*</span><br>
-		  <input class="input-box" type="text" name="last_name"><br>
-			 <span class="form-label uppercase">Email*</span><br>
-		  <input class="input-box" type="email" name="email"><br>
-				 <span class="form-label uppercase">Password*</span><br>
-		  <input class="input-box" type="password" name="password"><br>
-			  <label class="checkbox-label-container">
-						<input type="checkbox" name="legal_age" value="Yes"> I confirm I am of legal age in the province I reside
-				</label>
-			 <label class="checkbox-label-container">
-						<input type="checkbox" name="legal_age" value="Yes"> I agree to the Clinical Hemp Health Terms of Service and Privacy Policy
-				</label>
+		<h2>Shopping Cart</h2>
+		
+		<div class="cart-wrapper vert-center">
+			<div class="cart-column cart-image-column">
+				<img src="img/product.jpg" alt="" class="product-in-cart"/>
+			</div>
+			<div class="cart-column cart-name-column">
+				<h5>Product Name</h5>
+			</div>
+			<div class="cart-column item-number-column">
+<form id="remove-from-cart">
+		  <input class="cart-item-number-input" type="text" name="number_of_items" value="1">	<label class="item-number-label">Number of Items</label>
+	</form>
+			</div>
+			<div class="cart-column cart-button-column">
+		<button type="submit" class="btn-small">Remove From Cart</button>
+			</div>
+		<div class="cart-column cart-price-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+		</div>
+		
+		<div class="cart-wrapper vert-center">
+			<div class="cart-column cart-image-column">
+				<img src="img/product.jpg" alt="" class="product-in-cart"/>
+			</div>
+			<div class="cart-column cart-name-column">
+				<h5>Product Name</h5>
+			</div>
+			<div class="cart-column item-number-column">
+<form>
+		  <input class="cart-item-number-input" type="text" name="number_of_items" value="1">	<label class="item-number-label">Number of Items</label>
+	</form>
+			</div>
+			<div class="cart-column cart-button-column">
+		<button type="submit" class="btn-small">Remove From Cart</button>
+			</div>
+		<div class="cart-column cart-price-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+		</div>
+		<br>
+		<div class="cart-totals flex-row">
+				<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">Subtotal</span>
+			</div>
+			<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+	</div>
+		
+	<div class="cart-totals flex-row">
+				<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">Taxes</span>
+			</div>
+			<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+	</div>
+			<div class="cart-totals flex-row">
+				<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">Shipping?</span>
+			</div>
+			<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+	</div>
+			<div class="cart-totals flex-row cart-grand-total">
+				<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">Total</span>
+			</div>
+			<div class="flex-column-half before-checkout-column">
+				<span style="price cart-product-price">$0.00</span>
+			</div>
+	</div>
+		
+			<div class="cart-totals flex-row">
+				<div class="flex-column-half checkout-column">
+					<br>
+					<button type="submit" class="btn-main">Checkout</button>
+			</div>
+	</div>
+		
+		
+		
 
-			<button type="submit" class="btn-main">Register</button>
-</form>
-		<div class="text-in-divider-div">
-			<span class="text-in-divider">&nbsp;OR&nbsp;</span></div>
-<p class="font-size-sml grey-dark">Already have an account? <a href="/login">Login Now!</a></p>
+		
 	</section>
 	
 	
 </body>
 	<script>
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+
 	</script>
 </html>

@@ -215,13 +215,11 @@ position: absolute;
 	margin-bottom:10px;
 }
 .footer-wrapper {
-	display:flex;
 	background-color:#0F0F10;
 }
 
 .footer-column {
-	width: 25%;
-		color:white;
+	color:white;
 }
 
 .footer-column li {
@@ -246,7 +244,11 @@ position: absolute;
 @media screen and (min-width: 728px) {
 	.footer-wrapper {
   padding:7% 11%;
+	display:flex;
 }
+	.footer-column {
+	width: 25%;
+	}
 }
 
 
@@ -259,7 +261,7 @@ position: absolute;
 	}
 	
 	.footer-column {	
-display:block;
+/*display:block;*/
 	width:100%;
 		padding-top:30px;
 	}
