@@ -271,3 +271,88 @@ position: absolute;
 }
 }
 
+
+
+
+@media screen and (max-width: 728px) {
+
+/*****mobile test styles*****/
+
+	.main-mobile-nav-dropdown {
+		position:fixed;
+		width:100%;
+	}
+	
+.mobile-nav-accordion {
+/*			position:fixed;*/
+			height:50px;
+		z-index: 1000;
+background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+	.top.mobile-nav-accordion {
+		height:50px;
+		z-index: 1000;
+	}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.mobile-a.active, .mobile-nav-accordion:hover {
+  background-color: #ccc;
+}
+/*
+	.mid.mobile-nav-panel {
+		position:relative;
+	}
+*/
+.mobile-nav-panel {
+/*  padding: 0 18px;*/
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+	#header-logo-mobile {
+position:fixed;
+		left:20px;
+		height:50px;
+	}
+	span.hamburger-icon {
+		position:fixed;
+		right:20px;
+  font-size: 13px;
+	text-align: right;
+  color: #777;
+	}
+.mobile-nav-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+	
+	.mobile-nav-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+	
+	
+	
+	
+}
