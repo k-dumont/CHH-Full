@@ -284,6 +284,11 @@ position: absolute;
 	
 /*****mobile test styles*****/
 	
+	.lock-scroll {
+    overflow: hidden;
+}
+	
+	
 /*main top bar*/
 	.top-bar {
 		position:fixed;
@@ -319,7 +324,7 @@ background-color: #eee;
 	text-transform: uppercase;
 	letter-spacing:.05em;
   cursor: pointer;
-  padding: 18px;
+  padding: 14px 18px;
   width: 100vw;
   text-align: left;
   border: none;
