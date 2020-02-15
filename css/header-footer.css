@@ -266,7 +266,10 @@ position: absolute;
 	width:100%;
 		padding-top:30px;
 	}
-	
+	.footer-column li {
+padding-top:5px;
+	padding-bottom:5px;
+	}
 	.footer-wrapper {
 		padding:15px 25px 35px;
 }
