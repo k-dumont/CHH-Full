@@ -282,10 +282,10 @@ input[type="checkbox"] {
     font-size: 14px;
 	}
 
-/**********************DESKTOP/TABLET ONLY********************/
-@media screen and (min-width: 729px) {
+/**********************DESKTOP ONLY********************/
+@media screen and (min-width: 900px) {
 
-	/**********DESKTOP/TABLET GENERAL LAYOUT STYLES*********/
+	/**********DESKTOP GENERAL LAYOUT STYLES*********/
 	section#main-content{	
   padding:10% 11% 8%;
 		}
@@ -319,12 +319,12 @@ width: 50%;
 		padding-right:60px;
 	}
 
-	/*desktop/tablet button styles*/
+	/*desktop button styles*/
 		.anchor-links	.flex-column-third {
 			margin:10px 10px;
 }
 	
-/*desktop/tablet form styling*/
+/*desktop form styling*/
 	
 	input.input-box {
 	min-width:280px;
@@ -419,8 +419,8 @@ input[type="checkbox"]:disabled {
 }	
 }
 	
-/**********************MOBILE/ ONLY********************/
-@media screen and (max-width: 728px) {
+/**********************MOBILE/TABLET ONLY********************/
+@media screen and (max-width: 900px) {
 	
 	/**********MOBILE GENERAL LAYOUT STYLES*********/
 		section#main-content{	
