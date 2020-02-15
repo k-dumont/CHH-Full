@@ -298,13 +298,12 @@ height:70px;
 	}
 	
 	#mobileDIV {
-		max-height:110vh;
+		max-height:100vh;
 		position:fixed;
 		top:70px;
 			overflow-y: scroll;
 				z-index: 3000;
 		  -webkit-overflow-scrolling:touch; /* mobile safari */
-		margin-bottom:10vh;
 	}
 	#mobileDIV button {
 		font-size:16px;
@@ -331,6 +330,11 @@ background-color: #eee;
   outline: none;
   transition: 0.4s;
 }
+	
+	/*TRYING TO MAKE PAGE UNDERNEATH NOT SCROLL*/
+	.mobile-nav-accordion:active body {
+	overflow:hidden;
+	}
 	
 /*panel that is hidden until clicking the mobile-nav-accordian*/	
 .mobile-nav-panel {
@@ -390,7 +394,7 @@ position:fixed;
 	}
 	span.hamburger-icon {
 			right:0;
-		top:0;
+		top:5px;
 	}
 		.cart-icon {
 		right:100px;

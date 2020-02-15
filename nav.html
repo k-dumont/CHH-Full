@@ -87,7 +87,7 @@
 -->
 						
 <!--						ABOUT DROPDOWN-->
-							<button class="mid mobile-nav-accordion" onclick="lockScroll();">About</button>
+							<button class="mid mobile-nav-accordion">About</button>
 							<div class="mobile-nav-panel">
 									<a href="/from-the-founder.html"><button class="mobile-nav-link inner">From the Founder</button></a>           
 									<a href="/how-we-started.html"><button class="mobile-nav-link inner">How We Started</button></a> 
@@ -95,7 +95,7 @@
 							</div>
 						
 <!--						SHOP PRODUCTS DROPDOWN-->
-							<button class="mid mobile-nav-accordion" onclick="lockScroll();">Shop Products</button>
+							<button class="mid mobile-nav-accordion">Shop Products</button>
 							<div class="mobile-nav-panel">
 									<a href="/cbd-oil"><button class="mobile-nav-link inner">CBD Oil</button></a>                     
 									<a href="/thc-oil"><button class="mobile-nav-link inner">THC Oil</button></a> 
@@ -109,7 +109,7 @@
 
 						
 <!--						EDUCATION DROPDOWN-->
-									<button class="mid mobile-nav-accordion" onclick="lockScroll();">Education</button>
+						<button class="mid mobile-nav-accordion">Education</button>
 							<div class="mobile-nav-panel">
 									<a href="/"><button class="mobile-nav-link inner">Cannabis &amp; Hemp</button></a>           
 									<a href="/"><button class="mobile-nav-link inner">CBD &amp; THC</button></a> 
@@ -278,6 +278,7 @@ When I was a child, my parents taught me about the importance of giving back. Wh
   } else {
     x.style.display = "none";
   }
+				
 }
 			
 var acc = document.getElementsByClassName("mobile-nav-accordion");
@@ -299,15 +300,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 			
-
-function lockScroll() {
-            if ($('body').hasClass('lock-scroll')) {
-                $('body').removeClass('lock-scroll');
-            }
-            else {
-                $('body').addClass('lock-scroll');
-            }
-      }
 
 		
 	</script>
