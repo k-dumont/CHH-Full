@@ -301,7 +301,9 @@ width: 50%;
 	.flex-column-third {
 		width:33%;
 	}
-	
+	.flex-column-2thirds {
+		width:66%;
+	}
 	.vert-center {
 		align-items:center;
 	}
@@ -408,15 +410,18 @@ input[type="checkbox"]:disabled {
 	
 	/*****DESKTOP SPECIFIC - MY ACCOUNT********/
 .account-sidebar {
-	border-right:solid 1px grey;
-	width:25%;
-	padding-right:10px;
+	border-right:solid 1px #C2C2C2;
+	width:200px;
+	padding-right:30px;
 }
 
 .account-main-content {
-	width:75%;
-	padding-left:10px;
+	width:100%;
+	padding-left:60px;
 }	
+  	.account-main-content .flex-column-third {
+    padding-right: 30px;
+}
 }
 	
 /**********************MOBILE/TABLET ONLY********************/
@@ -474,8 +479,7 @@ margin-bottom:20px;
 .account-main-content {
 	padding:20px 0PX;
 }	
-	
-	
+
 	
 	}
 	
@@ -652,11 +656,10 @@ span.about-the-name-box {
 	line-height:2.5em;
 }
 
-/*
-div.account-info-labels {
-	font-weight:700;
+.account-sidebar a:active {
+text-decoration: underline;
 }
-*/
+
 .account-sidebar a:hover {
 	color:#97d2da;
 }
