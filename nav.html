@@ -75,10 +75,11 @@
 
 				<nav id="mobileNav">
 					
-<div class="main-mobile-nav-dropdown">					
-					<div class="top mobile-nav-accordion">	<a href="/index.html"><img id="header-logo-mobile" src="img/CHH_Black.png" alt="Clinical Hemp Health Logo"></a><span class="hamburger-icon">&#9776;</span></div>
-
-					<div class="mid mobile-nav-panel">
+<div class="top-bar">				
+	<a href="/index.html"><img id="header-logo-mobile" src="img/CHH_Black.png" alt="Clinical Hemp Health Logo"></a><span class="hamburger-icon" onclick="myFunction()">&#9776;</span></div>
+					
+	
+					<div id="mobileDIV" class="mid mobile-nav-panel">
 						<a href="/index"><button class="mobile-nav-link">Home</button></a>
 						<button class="mobile-nav-link">Contact</button>
 						<button class="mobile-nav-accordion">Shop Products</button>
@@ -257,7 +258,14 @@ When I was a child, my parents taught me about the importance of giving back. Wh
 	
 		<script>
 			
-			
+			function myFunction() {
+  var x = document.getElementById("mobileDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 			
 var acc = document.getElementsByClassName("mobile-nav-accordion");
 var i;
