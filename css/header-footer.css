@@ -256,6 +256,7 @@ position: absolute;
 
 /**********************MOBILE ONLY FOOTER STYLES********************/
 @media screen and (max-width: 728px) {
+
 .footer-wrapper {
 	display:block;
 	}
@@ -276,13 +277,18 @@ position: absolute;
 
 @media screen and (max-width: 728px) {
 
+	
+	.mobile-header-spacer {
+		height:90px;
+	}
+	
 /*****mobile test styles*****/
 	
 /*main top bar*/
 	.top-bar {
 		position:fixed;
 		width:100vw;
-		background-color:red;
+		background-color:#eee;
 height:70px;
 	}
 	
@@ -332,7 +338,7 @@ background-color: #eee;
     height: 45px;
     padding: 10px 10px 10px 50px!important;
     text-transform: capitalize;
-    background-color: #fff
+    background-color: #fff;
 	}
 
 	button.mobile-nav-link.inner:hover {
@@ -373,7 +379,7 @@ background-color: #eee;
 	
 	#header-logo-mobile {
 position:fixed;
-		left:20px;
+		left:14px;
 		top:10px;
 		height:50px;
 	}
