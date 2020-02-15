@@ -293,7 +293,7 @@ height:70px;
 	}
 	
 	#mobileDIV {
-/*		height:100vh;*/
+		max-height:90vh;
 		position:fixed;
 		top:70px;
 			overflow-y: scroll;
@@ -331,7 +331,7 @@ background-color: #eee;
 /*  padding: 0 18px;*/
   background-color: white;
   display: none;
-			max-height:100vh;
+/*			max-height:100vh;*/
 /*	z-index:2000;*/
 }
 	
