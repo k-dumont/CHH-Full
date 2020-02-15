@@ -275,7 +275,7 @@ position: absolute;
 
 
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 900px) {
 
 	
 	.mobile-header-spacer {
@@ -319,7 +319,7 @@ background-color: #eee;
 	letter-spacing:.05em;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 100vw;
   text-align: left;
   border: none;
   outline: none;
@@ -407,6 +407,7 @@ position:fixed;
   font-size: 13px;
   color: #777;
   float: right;
+margin-right:10px;
   margin-left: 5px;
 }
 
