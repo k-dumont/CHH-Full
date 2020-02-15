@@ -252,7 +252,7 @@ input.input-box {
 /*checkbox label*/
 .checkbox-label-container {
   display: block;
-  position: relative;
+/*  position: relative;*/
   margin-bottom: 10px;
 	padding-top: 3px;
     cursor: pointer;
@@ -272,7 +272,7 @@ input[type="checkbox"] {
 	width:30px;
 				height:30px;
 			padding:5px;
-			 position: relative;
+/*			 position: relative;*/
 		border: solid #646464 1px;
 	border-radius:0;
   background-color:transparent;
