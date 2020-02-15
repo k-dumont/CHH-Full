@@ -299,6 +299,7 @@ height:70px;
 			overflow-y: scroll;
 				z-index: 3000;
 		  -webkit-overflow-scrolling:touch; /* mobile safari */
+		display:none;
 	}
 
 /*main top accordian panel within the main top bar*/ 
@@ -389,8 +390,10 @@ position:fixed;
 	text-align: right;
   color: #000;
 		padding:20px;
+		cursor:pointer;
 	}
 	span.hamburger-icon {
+		z-index:3000;
 			right:0;
 		top:0;
 	}
