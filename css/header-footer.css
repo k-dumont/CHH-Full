@@ -406,7 +406,7 @@ position:fixed;
 	.mobile-nav-accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
+  color: #9D9D9D;
   float: right;
 margin-right:10px;
   margin-left: 5px;
