@@ -293,12 +293,13 @@ height:70px;
 	}
 	
 	#mobileDIV {
-		max-height:90vh;
+		max-height:110vh;
 		position:fixed;
 		top:70px;
 			overflow-y: scroll;
 				z-index: 3000;
 		  -webkit-overflow-scrolling:touch; /* mobile safari */
+		margin-bottom:10vh;
 	}
 	#mobileDIV button {
 		font-size:16px;
