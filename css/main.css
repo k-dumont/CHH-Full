@@ -440,6 +440,43 @@ input[type="checkbox"]:disabled {
 .shipping-address-left {
     margin-right: 10px;
 }
+  /*shipping page forms*/
+#shippingAddress input.input-box {
+  min-width:230px;
+/*    width: 250px;*/
+/*  width:50%;*/
+/*    width: 100%;*/
+}
+#shippingAddress .account-main-content {
+/*  min-width:200px;*/
+}
+
+/*
+#shippingAddress input.input-box.short-input {
+    min-width:135px;
+    width: 135px;
+}
+*/
+
+#shippingAddress input.long-input {
+width:510px;
+}
+
+  /*destop specific - my orders page*/
+  .my-orders-title-wrapper, .my-orders-items-wrapper {
+	display:flex;
+	}
+  		.my-orders-column {
+	width:120px;			
+}
+
+.my-orders-column.price-total{
+/*
+	width:100px;
+	text-align: end;
+*/
+}
+  
 }
 	
 /**********************MOBILE/TABLET ONLY********************/
@@ -498,6 +535,10 @@ margin-bottom:20px;
 	padding:20px 0PX;
 }	
 
+  /*mobile specific my orders page*/
+  div.my-orders-title-wrapper  {
+    display:none;
+  }
 	
 	}
 	
@@ -651,6 +692,8 @@ span.about-the-name-box {
 
 /***********************PAGE SPECIFIC CLASSES - MY ACCOUNT***********************/
 
+/*account details page global styles*/
+
 
 /*
 .account-sidebar {
@@ -675,7 +718,7 @@ span.about-the-name-box {
 .account-sidebar li {
   padding-top:5px;
   padding-bottom:5px;
-    line-height: 1.4em;
+    line-height: 1.1em;
 }
 
 .account-sidebar a:active, .account-sidebar-active-link {
@@ -687,25 +730,16 @@ border-bottom:1px solid #97d2da;
 	color:#97d2da;
 }
 
-
-/*account page forms*/
-#shippingAddress input.input-box {
-  min-width:230px;
-/*    width: 250px;*/
-/*  width:50%;*/
-/*    width: 100%;*/
-}
-#shippingAddress .account-main-content {
-/*  min-width:200px;*/
+/*my orders page global styles*/
+.my-orders-title-wrapper {
+    font-size: .85em;
 }
 
-/*
-#shippingAddress input.input-box.short-input {
-    min-width:135px;
-    width: 135px;
+.my-orders-items-wrapper {
+  font-size: .8em;
+  padding-bottom:15px;
+  padding-top:15px;
+  border-bottom: solid 1px;;
 }
-*/
 
-#shippingAddress input.long-input {
-width:510px;
-}
+
