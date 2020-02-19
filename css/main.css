@@ -175,6 +175,13 @@ hr.section-divider {
 	text-align: center;
 }
 
+.padding-right {
+  padding-right:30px;
+}
+.padding-left {
+  padding-left:30px;
+}
+
 
 /****Global Button Styles*****/
 .btn-main {
@@ -295,6 +302,10 @@ input[type="checkbox"] {
 display: flex;
 }
 
+  .flex-column-full {
+width: 100%;
+}
+  
 .flex-column-half {
 width: 50%;
 }
@@ -422,6 +433,12 @@ input[type="checkbox"]:disabled {
 }	
   	.account-main-content .flex-column-third {
     padding-right: 30px;
+}
+  .shipping-address-right {
+    margin-left: 10px;
+}
+.shipping-address-left {
+    margin-right: 10px;
 }
 }
 	
@@ -656,9 +673,9 @@ span.about-the-name-box {
 	font-size:14px;
 }
 .account-sidebar li {
-  padding-top:8px;
-  padding-bottom:8px;
-    line-height:.9em;
+  padding-top:5px;
+  padding-bottom:5px;
+    line-height: 1.4em;
 }
 
 .account-sidebar a:active, .account-sidebar-active-link {
@@ -670,3 +687,25 @@ border-bottom:1px solid #97d2da;
 	color:#97d2da;
 }
 
+
+/*account page forms*/
+#shippingAddress input.input-box {
+  min-width:230px;
+/*    width: 250px;*/
+/*  width:50%;*/
+/*    width: 100%;*/
+}
+#shippingAddress .account-main-content {
+/*  min-width:200px;*/
+}
+
+/*
+#shippingAddress input.input-box.short-input {
+    min-width:135px;
+    width: 135px;
+}
+*/
+
+#shippingAddress input.long-input {
+width:510px;
+}
