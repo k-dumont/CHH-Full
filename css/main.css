@@ -269,17 +269,15 @@ input[type="checkbox"] {
 		margin-right:8px;
 }
 
+/*KAT UNDO THIS IF BOXES GET FUCKED
 			input.item-number-input {
 	width:30px;
 				height:30px;
 			padding:5px;
-/*			 position: relative;*/
 		border: solid #646464 1px;
 	border-radius:0;
   background-color:transparent;
-  /* Adjusts the ; of the checkboxes on the text baseline */ 
     vertical-align: -5px;
-  /* Set here so that Windows' High-Contrast Mode can override */
   color:#000;
 	}
 	.item-number-label {
@@ -289,6 +287,7 @@ input[type="checkbox"] {
 	padding-top: 3px;
     font-size: 14px;
 	}
+*/
 
 /**********************DESKTOP ONLY********************/
 @media screen and (min-width: 900px) {
@@ -397,13 +396,13 @@ input[type="checkbox"]:disabled {
 	width:150px;			
 }
 	.cart-column.cart-name-column {
-	width:200px;
+	width:300px;
 }
 	.cart-column.cart-button-column {	
 	width:50%;
 	}	
 		.cart-column.item-number-column {	
-	width:50%;
+	width:170px;
 	}	
 
 .cart-column.cart-price-column {
@@ -614,12 +613,12 @@ div.product-property {
 .product-in-cart {
 /*    height: 100px;*/
     width:100%;
-	border:solid black 1px;
+/*	border:solid black 1px;*/
 	max-width:130px;
 }
 
 .cart-wrapper {
-	background-color:#efefef;
+	background-color:#eaf6f7;
 	border-bottom: solid white 5px;
 padding:10px 20px;
 }
@@ -630,9 +629,51 @@ padding:10px 20px;
 }
 
 .cart-column h5 {
-	margin-bottom:0px
+	margin-bottom:0px;
 }
 
+.cart-name-column span {
+  font-size:10px;
+}
+
+div.plus-minus-wrapper {
+  display: flex;
+}
+
+
+div.plus-minus span {
+	width:30px;
+	height:30px;  
+    display: flex;
+  align-items: center;
+  justify-content: center;
+background: #000000;
+}
+
+div.plus-minus {
+    margin: 0;
+font-size: 12px;
+line-height: 14px;
+  color:#fff;
+  font-weight:bold;
+
+}
+
+input.number-of-items {
+  width: 18px;
+  border:0px;
+    padding-left: 12px;
+	background-color:#fff;
+	border-radius:0;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    		letter-spacing:.1em;
+    margin: 0;
+font-size: 12px;
+line-height: 14px;
+}
+/*
 input.cart-item-number-input {
 	padding:5px;
 	width:20px;
@@ -646,6 +687,7 @@ input.cart-item-number-input {
 	font-weight: 600;
 	 position: relative;
 }
+*/
 
 	.cart-totals {
     text-align: right;
@@ -653,7 +695,9 @@ input.cart-item-number-input {
 .before-checkout-column {
 	align-content: flex-end;
 			padding:10px 20px;
-		background-color:#efefef;
+		background-color:#eaf6f7;
+  margin-top:2px;
+    margin-bottom:2px;
 }
 
 .cart-grand-total .before-checkout-column {
