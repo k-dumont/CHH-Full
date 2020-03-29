@@ -65,7 +65,7 @@ html {
 font-family:'montserrat',sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p {
-	margin-bottom:20px;
+	margin-bottom:15px;
 }
 h1,h2,h3,h4,h5,h6 {
 	line-height:1.1em;
@@ -214,6 +214,29 @@ hr.section-divider {
 	border-radius:0;
 	font-size:10px;
 	font-weight: 600;
+}
+
+
+.btn-full {
+	text-transform: uppercase;
+	padding:10px 28px;
+  width:100%;
+  color:#fff;
+	letter-spacing:.1em;
+	background-color:#000;
+		border: solid black 0px;
+/*	margin:4px 4px 0 0;*/
+	cursor: pointer;
+	border-radius:0;
+	font-size:14px;
+	font-weight: 600;
+}
+.btn-full:hover {
+	background-color:#ffde7b;
+	color:#000;
+/*	padding:14px 28px;*/
+/*		border: solid 1px #000;*/
+	cursor: pointer;
 }
 
 	.anchor-links	.flex-column-third {
@@ -392,6 +415,22 @@ input[type="checkbox"]:disabled {
 .cart-wrapper {
 	display:flex;
 	}
+  .cart-button-div {
+    position:relative;
+         display:block;
+        margin-bottom: 6px;
+  }
+   .cart-button-div button.btn-main {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+
+}
+/*
+  .cart-button-right {
+    float:right;
+  }
+*/
 		.cart-column.cart-image-column {
 	width:150px;			
 }
@@ -408,15 +447,17 @@ input[type="checkbox"]:disabled {
 .cart-column.cart-price-column {
 	width:100px;
 	text-align: end;
+  padding-right:15px;
 }
 
-	.flex-row.cart-totals {
-/*    width: 100%;*/
-		    justify-content: flex-end;
-/*		padding:25px;*/
-}
+  .cart-totals-wrapper {
+      width:380px;
+float:right;
+    margin-top: 50px;
+  }
+
 	.before-checkout-column {
-	width:120px;
+	width:160px;
 	}
 	
 	/*****DESKTOP SPECIFIC - MY ACCOUNT********/
@@ -466,9 +507,11 @@ width:510px;
   .my-orders-title-wrapper, .my-orders-items-wrapper {
 	display:flex;
 	}
+/*
   		.my-orders-column {
-	width:120px;			
+	width:50%;			
 }
+*/
 
 .my-orders-column.price-total{
 /*
@@ -620,7 +663,7 @@ div.product-property {
 .cart-wrapper {
 	background-color:#eaf6f7;
 	border-bottom: solid white 5px;
-padding:10px 20px;
+padding:2px 4px;
 }
 
 .cart-column {
@@ -691,14 +734,17 @@ input.cart-item-number-input {
 
 	.cart-totals {
     text-align: right;
+
 }
 .before-checkout-column {
-	align-content: flex-end;
+/*	align-content: flex-end;*/
 			padding:10px 20px;
 		background-color:#eaf6f7;
   margin-top:2px;
     margin-bottom:2px;
-}
+    text-align: left;
+}	
+  
 
 .cart-grand-total .before-checkout-column {
 	background-color:#121212;
@@ -706,13 +752,10 @@ input.cart-item-number-input {
 	font-weight: 600;
 }
 
-/*	.item-number-label {
-		  display: inline;
-  position: relative;
-  margin-bottom: 10px;
-	padding-top: 3px;
-    font-size: 14px;
-	}*/
+.also-interested-div img {
+  width:100px;
+  border: solid #D2D0D0 1px;
+}
 
 
 /***********************PAGE SPECIFIC CLASSES - ABOUT***********************/
