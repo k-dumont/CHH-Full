@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Checkout</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="main-content" style="background-color:blue">
+  
+
+  <h2>Checkout</h2>
+  
+<div class="flex-row" >
+                    <div class="flex-column-60" style="background-color:gray">
+                      <!--      SHIPPING ADDRESS START-->
+      <form name="shipping-address" id="shippingAddress">
+        <div class="flex-row vert-center">
+          <div class="shipping-address-left"> <span class="form-label uppercase">First Name</span><br>
+            <input class="input-box checkout" type="text" name="first_name" value="First Name" onfocus="this.value=''">
+          </div>
+          <div class="shipping-address-right"> <span class="form-label uppercase">Last Name</span><br>
+            <input class="input-box checkout" type="text" name="last_name" value="Last Name" onfocus="this.value=''">
+          </div>
+        </div>
+        <fieldset form="shipping-address" name="address">
+          <div class="flex-row vert-center">
+            <div><span class="form-label uppercase">Address Line 1</span><br>
+              <input class="input-box checkout long-input" type="text" name="address_line_1" value="Address Line 1" onfocus="this.value=''">
+            </div>
+          </div>
+          <div class="flex-row vert-center">
+            <div><span class="form-label uppercase">Address Line 2</span><br>
+              <input class="input-box checkout long-input" type="text" name="address_line_2" value="Address Line 2" onfocus="this.value=''">
+            </div>
+          </div>
+          <div class="flex-row vert-center">
+            <div class="shipping-address-left"> <span class="form-label uppercase">State/Province</span><br>
+              <input class="input-box checkout" type="text" name="state_province" value="State/Province" onfocus="this.value=''">
+            </div>
+            <div class="shipping-address-left shipping-address-right"> <span class="form-label uppercase ">Postal Code</span><br>
+              <input class="input-box checkout" type="text" name="zip-postal-code" value="Postal Code" onfocus="this.value=''">
+            </div>
+          </div>
+          <div class="flex-row vert-center">
+            <div class="shipping-address-left"><span class="form-label uppercase">City</span><br>
+              <input class="input-box checkout" type="text" name="city" value="City" onfocus="this.value=''">
+            </div>
+            <div class="shipping-address-right"><span class="uppercase">Province</span><br>
+<select id="provinces" class="dropdown-box checkout">
+  <option value="alberta">Alberta</option>
+  <option value="british-columbia">British Columbia</option>
+  <option value="manitoba">Manitoba</option>
+  <option value="new-brunswick">New Brunswick</option>
+  <option value="newfoundland">Newfoundland</option>
+  <option value="labrador">Labrador</option>
+  <option value="nova-scotia">Nova Scotia</option>
+  <option value="ontario">Ontario</option>
+  <option value="prince-edward-island">Prince Edward Island</option>
+  <option value="quebec">Quebec</option>
+  <option value="saskatchewan">Saskatchewan</option>
+</select>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-main">Update</button>
+      </form>
+<!--      SHIPPING ADDRESS END-->
+                  </div>
+  <div class="flex-column-40" style="background-color:orange">
+     <!--    CART TOTALS SECTION-->
+    <div>
+      <h3 class="fontweight-light">Cart Totals</h3>
+      <div class="cart-totals flex-row">
+        <div class="flex-column-half before-checkout-column"> <strong>Subtotal</strong> </div>
+        <div class="flex-column-half before-checkout-column"> $0.00 </div>
+      </div>
+      <div class="cart-totals flex-row">
+        <div class="flex-column-half before-checkout-column"> <strong>Shipping</strong> </div>
+        <div class="flex-column-half before-checkout-column"> FREE<br>
+          <span class="font-size-sml">(On orders of $149+)</span> </div>
+      </div>
+      <div class="cart-totals flex-row">
+        <div class="flex-column-half before-checkout-column"> <span style="price cart-product-price"><strong>Total</strong></span> </div>
+        <div class="flex-column-half before-checkout-column"> <span style="price cart-product-price">$0.00</span> </div>
+      </div>
+      <a href="/checkout"><button type="submit" class="btn-full proceed-to-checkout">Proceed to checkout </button>
+      </a> </div>
+
+  <!--    CART TOTALS AND ALSO INTERESTING IN SECTION END-->
+  </div>
+  </div>
+</section>
+</body>
+</html>

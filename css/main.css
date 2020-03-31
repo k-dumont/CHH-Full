@@ -223,7 +223,7 @@ hr.section-divider {
 #registration-form input.input-box {
   margin: 4px 0 12px 0;
 }
-input.input-box {
+input.input-box, select.dropdown-box {
   color: #616263;
   padding: 14px 16px;
   letter-spacing: .1em;
@@ -280,7 +280,7 @@ section#main-content {
 }
 .flex-column-full {
   width: 100%;
-}
+}fo
 .flex-column-half {
   width: 50%;
 }
@@ -290,6 +290,14 @@ section#main-content {
 .flex-column-2thirds {
   width: 66%;
 }
+  .flex-column-60 {
+/*    width:60%;*/
+        margin-right: 30px;
+  }
+  .flex-column-40 {
+  width: 40%;
+}
+  
 .vert-center {
   align-items: center;
 }
@@ -394,14 +402,12 @@ input[type="checkbox"]:disabled {
   
 .cart-totals-wrapper {
   width: 380px;
-/*  float: right;*/
-/*  margin-top: 50px;*/
  position:absolute;
   top:80px;
 right:0px;
 }
 .before-checkout-column {
-  width: 160px;
+width:50%;
 }
 /*****DESKTOP SPECIFIC - MY ACCOUNT********/
 .account-sidebar {
@@ -423,25 +429,16 @@ right:0px;
 .shipping-address-left {
   margin-right: 10px;
 }
-/*shipping page forms*/
+/*desktop specific shipping page forms*/
 #shippingAddress input.input-box {
-  min-width: 230px;/*    width: 250px;*/
-/*  width:50%;*/
-/*    width: 100%;*/
-}
-#shippingAddress .account-main-content {
-/*  min-width:200px;*/
-}
-/*
-#shippingAddress input.input-box.short-input {
-    min-width:135px;
-    width: 135px;
-}
-*/
-
+  min-width: 230px;   
+  }
+ 
 #shippingAddress input.long-input {
   width: 510px;
 }
+  
+  
 /*destop specific - my orders page*/
 .my-orders-title-wrapper, .my-orders-items-wrapper {
   display: flex;
@@ -458,6 +455,16 @@ right:0px;
 	text-align: end;
 */
 }
+  /*desktop specific checkout page*/
+   input.input-box.checkout, select.dropdown-box.checkout {
+    min-width:200px;
+  }
+  /*ACCOUNTING FOR DIFF WIDTH OF DROPDOWN BOX*/
+  select.dropdown-box {
+/*    width: 313px;*/
+  padding-right: 57px;
+}
+  
 }
 
 /**********************MOBILE/TABLET ONLY********************/
@@ -478,7 +485,7 @@ section#main-content {
   margin-bottom: 10px;
 }
 /*mobile form styling*/
-input.input-box {
+input.input-box, input.input-box.checkout, select.dropdown.checkout {
   min-width: 80vw;
   max-width: 90vw;
 }
@@ -744,3 +751,10 @@ span.about-the-name-box {
   border-bottom: solid 1px;
   ;
 }
+
+
+
+/***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
+
+
+  

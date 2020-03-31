@@ -10,91 +10,64 @@
 </head>
 <body>
 <section id="main-content">
+  
+  <label for="province">Province</label>
+<select id="provinces">
+  <option value="alberta">Alberta</option>
+  <option value="british-columbia">British Columbia</option>
+  <option value="manitoba">Manitoba</option>
+  <option value="new-brunswick">New Brunswick</option>
+  <option value="newfoundland">Newfoundland</option>
+  <option value="labrador">Labrador</option>
+  <option value="nova-scotia">Nova Scotia</option>
+  <option value="ontario">Ontario</option>
+  <option value="prince-edward-island">Prince Edward Island</option>
+  <option value="quebec">Quebec</option>
+  <option value="saskatchewan">Saskatchewan</option>
+</select>
+  
   <div class="cart-button-div">
     <button class="btn-main">Return To Shop</button>
   </div>
   <h2>Checkout</h2>
-  <!--  CART ITEM START-->
-  <div class="cart-wrapper vert-center">
-    <div class="cart-column cart-image-column"> <a href="#"><img src="img/CHH-GoldStandard_30ml-S-thumb.png" alt="" class="product-in-cart"/></a> </div>
-    <div class="cart-column cart-name-column">
-      <h5>FULL SPECTRUM CBD</h5>
-      <span>1,000 mg Full Spectrum CBD Oil</span><br>
-      <span> 1 fl oz (30 mL) 250 mg CBD/CBDA</span><br>
-      <span>10 mg THC (del ta-9-THC)</span> </div>
-    <div class="cart-column item-number-column">
-      <form>
-        <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
-          </a>
-          <input class="number-of-items" type="text" name="number_of_items" value="1">
-          <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
-          </a> </div>
-      </form>
-    </div>
-    <div class="cart-column cart-button-column">
-      <button type="submit" class="btn-small">Remove From Cart</button>
-    </div>
-    <div class="cart-column cart-price-column"> <span class="price cart-product-price">$80.00</span> </div>
-  </div>
-  <!--  CART ITEM END-->
-  <!--  CART ITEM START-->
-  <div class="cart-wrapper vert-center">
-    <div class="cart-column cart-image-column"> <a href="#"><img src="img/CHH-GoldStandard_30ml-S-thumb.png" alt="" class="product-in-cart"/></a> </div>
-    <div class="cart-column cart-name-column">
-      <h5>MEDICINAL THC</h5>
-      <span>2,000 mg Rick Simpson Oil (RSO)
-</span><br>
-      <span>1 fl o z (30 mL)</span><br>
-      <span>1,200 mg THC (del ta-9-THC)</span> </div>
-    <div class="cart-column item-number-column">
-      <form>
-        <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
-          </a>
-          <input class="number-of-items" type="text" name="number_of_items" value="1">
-          <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
-          </a> </div>
-      </form>
-    </div>
-    <div class="cart-column cart-button-column">
-      <button type="submit" class="btn-small">Remove From Cart</button>
-    </div>
-    <div class="cart-column cart-price-column"> <span class="price cart-product-price">$80.00</span> </div>
-  </div>
-  <!--  CART ITEM END-->
-  <!--  CART ITEM START-->
-  <div class="cart-wrapper vert-center">
-    <div class="cart-column cart-image-column"> <a href="#"><img src="img/NighttimeCBD-30mL-thumb.png" alt="" class="product-in-cart"/></a> </div>
-    <div class="cart-column cart-name-column">
-      <h5>NIGHTTIME CBD</h5>
-      <span>1,500 mg Hemp-Derived CBD</span><br>
-      <span> 1 fl oz (30 mL) 250 mg CBD/CBDA</span><br>
-      <span>10 mg THC (del ta-9-THC)</span> </div>
-    <div class="cart-column item-number-column">
-      <form>
-        <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
-          </a>
-          <input class="number-of-items" type="text" name="number_of_items" value="1">
-          <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
-          </a> </div>
-      </form>
-    </div>
-    <div class="cart-column cart-button-column">
-      <button type="submit" class="btn-small">Remove From Cart</button>
-    </div>
-    <div class="cart-column cart-price-column"> <span class="price cart-product-price">$80.00</span> </div>
-  </div>
-  <!--  CART ITEM END-->
-  <div class="cart-button-div">
-    <a href="#"><button type="submit" class="btn-main">Update Cart</button></a>
-  </div>
-  <!--    CART TOTALS AND ALSO INTERESTING IN SECTION-->
-  <div class="cart-footer-wrapper">
+  
+   <!--    SHIPPING ADDRESS SECTION-->
+  
+  <div class="checkout-wrapper flex-row">
+    <form name="shipping-address" id="shippingAddress">
+      <div class="flex-row vert-center">
+          <div class="shipping-address-left">
+            <span class="form-label uppercase">First Name</span><br>      
+            <input class="input-box" type="text" name="first_name" value="First Name"></div>
+            <div class="shipping-address-right">
+          <span class="form-label uppercase">Last Name</span><br><input class="input-box" type="text" name="last_name" value="Last Name">
+          </div>
+				</div>
+        
+   <fieldset form="shipping-address" name="address">  
+        
+      <div class="flex-row vert-center shipping-address-wrapper">
+   					<div><span class="form-label uppercase">Address Line 1</span><br> <input class="input-box long-input" type="text" name="address_line_1" value="Address Line 1"></div>
+				</div>
+         <div class="flex-row vert-center">
+   					<div><span class="form-label uppercase">Address Line 2</span><br> <input class="input-box long-input" type="text" name="address_line_2" value="Address Line 2"></div>
+				</div>
+        
+        <div class="flex-row vert-center">
+   					<div class="shipping-address-left">       <span class="form-label uppercase">State/Province</span><br> <input class="input-box" type="text" name="state_province" value="State/Province"></div>
+          <div class="shipping-address-left shipping-address-right">       <span class="form-label uppercase ">Zip/Postal Code</span><br><input class="input-box" type="text" name="zip-postal-code" value="Zip/Postal Code"></div> 
+				</div>
+        
+       <div class="flex-row vert-center">
+        <div class="shipping-address-left"><span class="form-label uppercase">City</span><br> <input class="input-box" type="text" name="city" value="City"></div>    <div class="shipping-address-right"><span class="form-label uppercase">Country</span><br> <input class="input-box" type="text" name="country" value="Country"></div>
+         
+        </div>
+        </fieldset>
+
+     <!--    SHIPPING ADDRESS SECTION END-->
+  
+  
+  <!--    CART TOTALS SECTION-->
     <div class="cart-totals-wrapper">
       <h3 class="fontweight-light">Cart Totals</h3>
       <div class="cart-totals flex-row">
@@ -112,17 +85,16 @@
       </div>
       <a href="/checkout"><button type="submit" class="btn-full proceed-to-checkout">Proceed to checkout </button>
       </a> </div>
-    <div class="also-interested-div">
-      <h3 class="fontweight-light">You May Also Be Interested in</h3>
-      <a href="#"> <div class="flex-row vert-center">
-        <div class="flex-column-third vert-center product-image-column"> <img src="img/DaytimeCBD-30mL-thumb.png" class="product-image" alt=""/> </div>
-        <div class="flex-column-2thirds"> <span><strong>Morning CBD</strong><br>
-          1,500 mg Hemp-Derived CBD<br>
-          1 fl o z (30 mL)</span> </div>
-      </div></a>
-    </div>
-  </div>
+
   <!--    CART TOTALS AND ALSO INTERESTING IN SECTION END-->
+    </form>
+    </div>
+    
+    
+  <div class="cart-button-div">
+    <a href="#"><button type="submit" class="btn-main">Update Cart</button></a>
+  </div>
+  
 </section>
 </body>
 </html>
