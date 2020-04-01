@@ -422,9 +422,13 @@ width:50%;
 }
 .shipping-address-right {
   margin-left: 10px;
+  width:40%;
+  display:inline;
 }
 .shipping-address-left {
   margin-right: 10px;
+    width:40%;
+    display:inline;
 }
 /*desktop specific shipping page forms*/
 #shippingAddress input.input-box {
