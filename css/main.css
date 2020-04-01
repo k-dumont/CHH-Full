@@ -318,10 +318,6 @@ section#main-content {
 }
 /*desktop form styling*/
 	
-input.input-box {
-  min-width: 280px;
-/*  width:20vw;*/
-}
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -432,11 +428,11 @@ width:50%;
 }
 /*desktop specific shipping page forms*/
 #shippingAddress input.input-box {
-  width: 20vw;   
+  width: 40%;   
   }
  
 #shippingAddress input.long-input {
-  width: 44vw;
+  width: 90%;
 }
   
   
@@ -458,12 +454,12 @@ width:50%;
 }
   /*desktop specific checkout page*/
    input.input-box.checkout, select.dropdown-box.checkout {
-    min-width:200px;
+    min-width:140px;
   }
   /*ACCOUNTING FOR DIFF WIDTH OF DROPDOWN BOX*/
   select.dropdown-box {
 /*    width: 313px;*/
-  padding-right: 57px;
+    width: 23vw;
 }
   
 }
@@ -663,6 +659,9 @@ button.proceed-to-checkout {
 
 .cart-totals {
   text-align: right;
+}
+.no-margin {
+  margin:0!important;
 }
 .before-checkout-column, .blue-box {
   /*	align-content: flex-end;*/
