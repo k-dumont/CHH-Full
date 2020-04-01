@@ -291,8 +291,8 @@ section#main-content {
   width: 66%;
 }
   .flex-column-60 {
-/*    width:60%;*/
-        margin-right: 30px;
+    width:60%;
+    margin-right: 60px;
   }
   .flex-column-40 {
   width: 40%;
@@ -320,6 +320,7 @@ section#main-content {
 	
 input.input-box {
   min-width: 280px;
+/*  width:20vw;*/
 }
 input[type="checkbox"] {
   -webkit-appearance: none;
@@ -431,11 +432,11 @@ width:50%;
 }
 /*desktop specific shipping page forms*/
 #shippingAddress input.input-box {
-  min-width: 230px;   
+  width: 20vw;   
   }
  
 #shippingAddress input.long-input {
-  width: 510px;
+  width: 44vw;
 }
   
   
