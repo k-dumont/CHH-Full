@@ -278,9 +278,9 @@ section#main-content {
 .flex-row {
   display: flex;
 }
-.flex-column-full {
+.flex-column-fcart-ull {
   width: 100%;
-}fo
+}
 .flex-column-half {
   width: 50%;
 }
@@ -663,14 +663,17 @@ button.proceed-to-checkout {
 .cart-totals {
   text-align: right;
 }
-.before-checkout-column {
+.before-checkout-column, .blue-box {
   /*	align-content: flex-end;*/
   padding: 10px 20px;
   background-color: #eaf6f7;
-  margin-top: 2px;
-  margin-bottom: 2px;
   text-align: left;
 }
+.before-checkout-column {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .cart-grand-total .before-checkout-column {
   background-color: #121212;
   color: white;
@@ -756,5 +759,11 @@ span.about-the-name-box {
 
 /***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
 
+#shippingAddress .form-label {
+  font-size:.7em;
+}
 
+.checkout-totals-wrapper {
+ width:100%;
+}
   
