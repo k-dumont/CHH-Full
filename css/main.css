@@ -423,11 +423,17 @@ width:50%;
 /*
 .shipping-address-right {
   margin-left: 10px;
+<<<<<<< HEAD
   width:50%;
 }
 .shipping-address-left {
   margin-right: 10px;
     width:50%;
+=======
+}
+.shipping-address-left {
+  margin-right: 10px;
+>>>>>>> parent of a672fe8... trying stuff not working iwth shipping address input
 }
 */
 /*desktop specific shipping page forms*/
