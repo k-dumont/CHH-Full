@@ -29,12 +29,22 @@
       width:40%;
       
     }
+    .row-wrapper {
+      backround-color:blue;
+      display:flex;
+      
+    }
     input.full{
       width:100%;
     }
     input.fifty {
-      width:50%;
+      width:100%;
+/*      display:inline;*/
+    }
+    div.fifty {
       display:inline;
+      width:100%;
+      background-color:orange;
     }
   </style>
   
@@ -45,11 +55,13 @@
   
  <div class="outer">
    <div class="inner-60">
-     <div>
-       <input class="fifty" value="half" onfocus="this.value=''"><input class="fifty" value="half" onfocus="this.value=''">
+     <div class="row-wrapper">
+        <div class="fifty"><span class="uppercase">1st value</span><br>   
+          <input class="fifty" value="half" onfocus="this.value=''"></div> <div class="fifty"><span class="uppercase">2nd value</span><br><input class="fifty" value="half" onfocus="this.value=''"></div>
+          </div>
        <input class="full" value="House Number &amp; Street Name" onfocus="this.value=''">
        <input class="full" value="House Number &amp; Street Name" onfocus="this.value=''">
-     </div>
+  
    </div>
     <div class="inner-40">
    </div>

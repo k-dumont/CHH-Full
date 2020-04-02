@@ -420,16 +420,16 @@ width:50%;
 .account-main-content .flex-column-third {
   padding-right: 20px;
 }
+/*
 .shipping-address-right {
   margin-left: 10px;
-  width:40%;
-  display:inline;
+  width:50%;
 }
 .shipping-address-left {
   margin-right: 10px;
-    width:40%;
-    display:inline;
+    width:50%;
 }
+*/
 /*desktop specific shipping page forms*/
 #shippingAddress input.input-box {
   width: 40%;   
