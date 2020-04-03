@@ -111,6 +111,30 @@ hr.section-divider {
   background-size: cover;
   background-position: center;
 }
+
+/*KAT MOVED THIS FROM DESKTOP ONLY. MOVE BACK IF IT FUCKS WITH THINGS*/
+.flex-column-cart-full {
+  width: 100%;
+}
+.flex-column-half {
+  width: 50%;
+}
+.flex-column-third {
+  width: 33%;
+}
+.flex-column-2thirds {
+  width: 66%;
+}
+  .flex-column-60 {
+    width:60%;
+    margin-right: 60px;
+  }
+  .flex-column-40 {
+  width: 40%;
+}
+
+
+
 /*********USEFUL REUSABLE CLASSES*******/
 /*Fonts*/
 .fontweight-light {
@@ -278,25 +302,12 @@ section#main-content {
 .flex-row {
   display: flex;
 }
-.flex-column-fcart-ull {
-  width: 100%;
-}
-.flex-column-half {
-  width: 50%;
-}
-.flex-column-third {
-  width: 33%;
-}
-.flex-column-2thirds {
-  width: 66%;
-}
-  .flex-column-60 {
-    width:60%;
-    margin-right: 60px;
-  }
-  .flex-column-40 {
-  width: 40%;
-}
+
+  
+/*
+ KAT all the flex columns used to be here - moved to all screen styles
+  
+*/
   
 .vert-center {
   align-items: center;
