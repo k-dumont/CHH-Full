@@ -177,6 +177,9 @@ hr.section-divider {
 .padding-left {
   padding-left: 30px;
 }
+.no-margin {
+  margin:0!important;
+}
 /****Global Button Styles*****/
 .btn-main {
   text-transform: uppercase;
@@ -249,13 +252,22 @@ hr.section-divider {
 }
 input.input-box, select.dropdown-box {
   color: #616263;
-  padding: 14px 16px;
+/*  padding: 14px 16px;*/
   letter-spacing: .1em;
-  background-color: transparent;
-  border: solid #646464 1px;
-  border-radius: 0!important;
+  background-color: white;
   margin: 4px 0 25px 0;
+        border: 14px solid white;
+/*        box-shadow: inset 0px 0px 0px 10px white;*/
+        box-sizing: border-box; /* Include padding and border in element's width and height */
+        outline: solid #646464 1px;
+        outline-offset: -1px;
+    }
+
+input.input-box:focus {
+  background-color:#f6fcfd;
+    border-color: #f6fcfd;  
 }
+
 /*checkbox label*/
 .checkbox-label-container {
   display: block;
@@ -303,7 +315,9 @@ section#main-content {
   display: flex;
 }
 
-  
+section.sixtyforty-layout div.flex-column-60 {
+ margin-right:30px;
+  } 
 /*
  KAT all the flex columns used to be here - moved to all screen styles
   
@@ -434,54 +448,49 @@ width:50%;
 /*
 .shipping-address-right {
   margin-left: 10px;
-<<<<<<< HEAD
   width:50%;
 }
 .shipping-address-left {
   margin-right: 10px;
     width:50%;
-=======
 }
 .shipping-address-left {
   margin-right: 10px;
->>>>>>> parent of a672fe8... trying stuff not working iwth shipping address input
-}
+
 */
 /*desktop specific shipping page forms*/
+/*
 #shippingAddress input.input-box {
   width: 40%;   
   }
+*/
  
+/*
 #shippingAddress input.long-input {
   width: 90%;
 }
   
+*/
   
 /*destop specific - my orders page*/
 .my-orders-title-wrapper, .my-orders-items-wrapper {
   display: flex;
 }
 /*
-  		.my-orders-column {
-	width:50%;			
-}
-*/
 
-.my-orders-column.price-total {
-/*
-	width:100px;
-	text-align: end;
-*/
-}
+
   /*desktop specific checkout page*/
+/*
    input.input-box.checkout, select.dropdown-box.checkout {
     min-width:140px;
   }
+*/
   /*ACCOUNTING FOR DIFF WIDTH OF DROPDOWN BOX*/
+/*
   select.dropdown-box {
-/*    width: 313px;*/
     width: 23vw;
 }
+*/
   
 }
 
@@ -494,6 +503,10 @@ section#main-content {
 .flex-column-half {
   display: block;
 }
+section.sixtyforty-layout div.flex-column-40, section.sixtyforty-layout div.flex-column-60 {
+    width:100%;
+  }
+  
 .text-column {
   padding: 25px 0px;
 }
@@ -502,11 +515,13 @@ section#main-content {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/*mobile form styling*/
-input.input-box, input.input-box.checkout, select.dropdown.checkout {
+/*
+mobile form styling
+input.input-box, input.input-box, select.dropdown {
   min-width: 80vw;
   max-width: 90vw;
 }
+*/
 /***MOBILE PAGE SPECIFIC - SHOPPING CART STYLES****/
 .cart-wrapper {
   display: block;
@@ -681,9 +696,7 @@ button.proceed-to-checkout {
 .cart-totals {
   text-align: right;
 }
-.no-margin {
-  margin:0!important;
-}
+
 .before-checkout-column, .blue-box {
   /*	align-content: flex-end;*/
   padding: 10px 20px;
@@ -780,7 +793,7 @@ span.about-the-name-box {
 
 /***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
 
-#shippingAddress .form-label {
+#shippingDetails .form-label {
   font-size:.7em;
 }
 

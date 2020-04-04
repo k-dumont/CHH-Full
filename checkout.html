@@ -9,29 +9,19 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
 </head>
   <style>
+/*
     .outer {
  width: 100%;
   margin: 20px auto;
   display: flex;
   align-items: center;
-      background-color:blue;
-/*      height:500px;*/
-    }
-/*
-    .inner-60 {
-      height:30px;
-      background-color:green;
-      width:60%;  
     }
 */
-    div#shippingDetails {
-      margin-right:30px;
-    }
+
+
+    
   
-    input.full{
-      width:100%;
-    }
-    input.inline-half {
+    input.full, select.full {
       width:100%;
 /*      display:inline;*/
     }
@@ -40,31 +30,86 @@
       width:100%;
       background-color:orange;
     }
+    div.inline-half.left-half {
+      margin-right:10px;
+    }
+
+    
   </style>
   
   
   
 <body>
-<section id="main-content">
-  
- <div class="outer">
+<section id="main-content" class="sixtyforty-layout">
+    <h2>Checkout</h2>
+   <button class="btn-main">Return To Shop</button>
+ <div class="flex-row">
 
 
 
    <div class="flex-column-60" id="shippingDetails">
          <!--      SHIPPING ADDRESS START-->
+                <form name="shipping-details-form">
                          <h3 class="fontweight-light">Shipping Details</h3>
-     <!--      <form name="shipping-address" id="shippingAddress">-->
      <div class="flex-row">
-        <div class="inline-half"><span class="uppercase">1st value</span><br>   
-          <input class="inline-half" value="half" onfocus="this.value=''"></div> <div class="inline-half"><span class="uppercase">2nd value</span><br><input class="inline-half" value="half" onfocus="this.value=''"></div>
-          </div>
-       <input class="full" value="House Number &amp; Street Name" onfocus="this.value=''">
-       <input class="full" value="House Number &amp; Street Name" onfocus="this.value=''">
-  
+        <div class="inline-half left-half"><span class="form-label uppercase">First Name</span><br>
+          <input class="full input-box" type="text" name="first_name" value="First Name" onfocus="this.value=''"> </div><div class="inline-half"><span class="form-label uppercase">Last Name</span><br><input class="full input-box" value="Last Name" onfocus="this.value=''"></div>
+          </div>   
+     <h6>Canadian Shipping Address</h6>
+                      <div><span class="form-label uppercase">House Number &amp; Street Name</span><br>
+              <input class="input-box full" type="text" name="house_number_street_name" value="House Number &amp; Street Name" onfocus="this.value=''">
+            </div>
+      <div><span class="form-label uppercase">Apartment, Suite, Unit (Optional)</span><br>
+              <input class="input-box full" type="text" name="apartment_suite_unit" value="Apartment, Suite, Unit (Optional)" onfocus="this.value=''">
+            </div>
+     <div class="flex-row">
+   <div class="inline-half left-half"><span class="form-label uppercase">City</span><br>
+              <input class="full input-box" type="text" name="city" value="City" onfocus="this.value=''">
    </div>
-   </form>        
+      <div class="inline-half"><span class="form-label uppercase">Province</span><br>
+             <select id="provinces" class="dropdown-box full" name="provinces">
+   <option value="alberta">Select a Province</option>
+  <option value="alberta">Alberta</option>
+  <option value="british-columbia">British Columbia</option>
+  <option value="manitoba">Manitoba</option>
+  <option value="new-brunswick">New Brunswick</option>
+  <option value="newfoundland">Newfoundland</option>
+  <option value="labrador">Labrador</option>
+  <option value="nova-scotia">Nova Scotia</option>
+  <option value="ontario">Ontario</option>
+  <option value="prince-edward-island">Prince Edward Island</option>
+  <option value="quebec">Quebec</option>
+  <option value="saskatchewan">Saskatchewan</option>
+</select>
+   </div>
+     </div>  
+      <div class="flex-row">
+   <div class="inline-half left-half"> <span class="form-label uppercase">Postal Code</span><br>
+     <input class="input-box full" type="text" name="postal_code" value="Postal Code" onfocus="this.value=''"></div>
+         <div class="inline-half"> <span class="form-label uppercase">Phone</span><br>
+              <input class="input-box full" type="tel" name="phone_number" value="Phone" onfocus="this.value=''"></div>
+     </div>
+      <div>
+       <span class="form-label uppercase">Email Address</span><br>
+              <input class="input-box full" type="email" name="email_address" value="Email Address" onfocus="this.value=''">
+          </div>
+<!--                          <button type="submit" class="btn-main">Update</button>-->
+                  <div class="spacer-small"></div>
+                  <div class="blue-box"> 
+            <label class="checkbox-label-container">
+              <input type="checkbox" name="marketing_agreement" checked><strong>Provide Signature on Delivery</strong></label>
+          <p class="font-size-sml">We can only guarantee the delivery of your package if you select to “Provide Signature on Delivery” above. No refunds will be issued for lost or stolen packages when “Provide Signature on Delivery” has not been selected.</p>
+       </div>
+
+     </form>
+   </div>
 <!--      SHIPPING ADDRESS END-->
+   
+   
+   
+   
+   
+         
        <div class="flex-column-40">
      <!--    CART TOTALS SECTION-->
   <div class="checkout-totals-wrapper">
@@ -95,11 +140,11 @@
       </div>
       <a href="/checkout"><button type="submit" class="btn-full proceed-to-checkout">Proceed to checkout </button>
       </a> </div>
-
-  <!--    CART TOTALS AND ALSO INTERESTING IN SECTION END-->
    </div>
+  <!--    CART TOTALS AND ALSO INTERESTING IN SECTION END-->
+
   </div>
-  
+
 </section>
 </body>
 </html>
