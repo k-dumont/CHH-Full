@@ -132,6 +132,12 @@ hr.section-divider {
   .flex-column-40 {
   width: 40%;
 }
+    .flex-column-70 {
+          width:70%;  
+    }
+    .flex-column-15 {
+      width:15%;
+    }
 
 
 
@@ -179,6 +185,9 @@ hr.section-divider {
 }
 .no-margin {
   margin:0!important;
+}
+.margin-top-sml {
+  margin-top:10px;
 }
 /****Global Button Styles*****/
 .btn-main {
@@ -255,7 +264,7 @@ input.input-box, select.dropdown-box {
 /*  padding: 14px 16px;*/
   letter-spacing: .1em;
   background-color: white;
-  margin: 4px 0 25px 0;
+  margin: 4px 0 16px 0;
         border: 14px solid white;
 /*        box-shadow: inset 0px 0px 0px 10px white;*/
         box-sizing: border-box; /* Include padding and border in element's width and height */
@@ -428,9 +437,11 @@ input[type="checkbox"]:disabled {
   top:80px;
 right:0px;
 }
+/*
 .before-checkout-column {
 width:50%;
 }
+*/
 /*****DESKTOP SPECIFIC - MY ACCOUNT********/
 .account-sidebar {
   border-right: solid 1px #C2C2C2;
@@ -506,7 +517,7 @@ section#main-content {
 section.sixtyforty-layout div.flex-column-40, section.sixtyforty-layout div.flex-column-60 {
     width:100%;
   }
-  
+
 .text-column {
   padding: 25px 0px;
 }
@@ -541,9 +552,16 @@ input.input-box, input.input-box, select.dropdown {
     margin-top:40px;
     margin-bottom:80px;
   }
+/*
   .before-checkout-column {
   width: 50%;
 }
+*/
+  /****MOBILE SPECIFIC - CHECKOUT PAGE********/
+    #cartTotals .flex-row {
+    display: flex;
+}
+  
   
 /****MOBILE SPECIFIC - MY ACCOUNT********/
 .account-sidebar {
@@ -683,9 +701,7 @@ input.cart-item-number-input {
 	 position: relative;
 }
 */
-button.proceed-to-checkout {
-  margin-top:10px;
-}
+
 .cart-footer-wrapper {
   min-height:400px;
   display:block;
@@ -699,7 +715,7 @@ button.proceed-to-checkout {
 
 .before-checkout-column, .blue-box {
   /*	align-content: flex-end;*/
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #eaf6f7;
   text-align: left;
 }
@@ -797,7 +813,24 @@ span.about-the-name-box {
   font-size:.7em;
 }
 
+ input.full, select.full {
+      width:100%;
+/*      display:inline;*/
+    }
+    div.inline-half {
+      display:inline;
+      width:100%;
+    }
+    div.inline-half.left-half {
+      margin-right:10px;
+    }
+.cart-totals-p {
+  font-size:.7em;
+}
+
+/*
 .checkout-totals-wrapper {
  width:100%;
 }
+*/
   
