@@ -50,7 +50,7 @@ html {
   font-family: 'montserrat', sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1em;
@@ -186,6 +186,7 @@ hr.section-divider {
 .no-margin {
   margin:0!important;
 }
+
 .margin-top-sml {
   margin-top:10px;
 }
@@ -558,7 +559,7 @@ input.input-box, input.input-box, select.dropdown {
 }
 */
   /****MOBILE SPECIFIC - CHECKOUT PAGE********/
-    #cartTotals .flex-row {
+    #orderDetails .flex-row {
     display: flex;
 }
   
@@ -715,7 +716,7 @@ input.cart-item-number-input {
 
 .before-checkout-column, .blue-box {
   /*	align-content: flex-end;*/
-  padding: 8px 16px;
+ padding: 12px 16px;
   background-color: #eaf6f7;
   text-align: left;
 }
@@ -809,6 +810,20 @@ span.about-the-name-box {
 
 /***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
 
+.yellow-box {
+  background-color:#ffde7b;
+    padding: 8px 16px;
+  font-size:.8em;
+}
+svg.yellow-arrow {
+height: 10px;
+    transform: translateY(7px) translateX(16px);
+}
+.f2b6ec71-c2cf-45e4-98a2-3b85341dd17c{fill:#ffde7b;}
+#orderDetails div{
+  text-align:left;
+  font-size:.9em;
+}
 #shippingDetails .form-label {
   font-size:.7em;
 }
@@ -824,8 +839,11 @@ span.about-the-name-box {
     div.inline-half.left-half {
       margin-right:10px;
     }
-.cart-totals-p {
-  font-size:.7em;
+.order-details-p {
+  font-size:.9em;
+}
+.flex-row.product-row div.blue-box {
+    padding-bottom: 0;
 }
 
 /*
