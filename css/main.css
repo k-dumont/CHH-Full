@@ -269,6 +269,7 @@ input.input-box {
   letter-spacing: .05em;
   background-color: white;
   margin: 4px 0 16px 0;
+  border-radius: 0!important;
 }
 
 #registration-form input.input-box {
@@ -552,7 +553,7 @@ padding:16px 20px;
 
 input.input-box, select.dropdown {
   min-width: 80vw;
-  max-width: 90vw;
+  max-width: 83vw;
 }
 
 /***MOBILE PAGE SPECIFIC - SHOPPING CART STYLES****/
