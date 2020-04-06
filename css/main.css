@@ -412,7 +412,10 @@ input[type="checkbox"]:disabled {
   position: absolute;
   right: 0;
   margin-right: 0;
+  margin-bottom:20px;
 }
+  div.cart-button-div.cart-page {   top: -10px;
+  }
   
 .cart-column.cart-image-column {
   width: 150px;
