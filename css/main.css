@@ -519,7 +519,13 @@ top: -50px;
 top: -58px;
 }
 
-
+  div.inline-half {
+      display:inline;
+      width:100%;
+    }
+    div.inline-half.left-half {
+      margin-right:10px;
+    }
 }
 
 /**********************MOBILE/TABLET ONLY********************/
@@ -856,13 +862,6 @@ height: 10px;
 }
 
 
-    div.inline-half {
-      display:inline;
-      width:100%;
-    }
-    div.inline-half.left-half {
-      margin-right:10px;
-    }
 .order-details-p {
   font-size:.9em;
 }
