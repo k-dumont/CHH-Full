@@ -263,7 +263,7 @@ hr.section-divider {
 .form-label {
   letter-spacing: .05em;
 }
-input.input-box {
+input.input-box, select.dropdown-box {
   color: #616263;
 /*  padding: 14px 16px;*/
   letter-spacing: .05em;
@@ -516,7 +516,7 @@ width:50%;
 top: -50px;
 }
    #orderDetails .cart-button-div .btn-main {
-top: -50px;
+top: -58px;
 }
 
 
@@ -547,7 +547,7 @@ section.sixtyforty-layout div.flex-column-40, section.sixtyforty-layout div.flex
 mobile form styling
   
   */
-  input.input-box {
+  input.input-box, select.dropdown-box {
 padding:16px 20px;
 }
 
