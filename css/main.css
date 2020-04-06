@@ -873,6 +873,8 @@ height: 10px;
 }
 .interac-logo {
   padding-left:20px;
+  width:60px;
+  height:auto;
 }
 /*
 .checkout-totals-wrapper {
