@@ -269,7 +269,7 @@ hr.section-divider {
 input.input-box, select.dropdown-box {
   color: #616263;
 /*  padding: 14px 16px;*/
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   background-color: white;
   margin: 4px 0 16px 0;
         border: 14px solid white;
