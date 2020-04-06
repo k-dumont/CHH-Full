@@ -834,7 +834,9 @@ height: 10px;
   font-size:.7em;
 }
 
-
+.margin-2 {
+  margin-top:2px;
+}
 
  input.full, select.full {
       width:100%;
