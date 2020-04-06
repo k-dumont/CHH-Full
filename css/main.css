@@ -584,6 +584,9 @@ input.input-box, select.dropdown {
     #orderDetails .flex-row {
     display: flex;
 }
+  #orderDetails button.btn-main {
+    margin-bottom: 20px;
+}
   
   
 /****MOBILE SPECIFIC - MY ACCOUNT********/
