@@ -263,25 +263,16 @@ hr.section-divider {
 .form-label {
   letter-spacing: .05em;
 }
-#registration-form input.input-box {
-  margin: 4px 0 12px 0;
-}
-input.input-box, select.dropdown-box {
+input.input-box {
   color: #616263;
 /*  padding: 14px 16px;*/
   letter-spacing: .05em;
   background-color: white;
   margin: 4px 0 16px 0;
-        border: 14px solid white;
-/*        box-shadow: inset 0px 0px 0px 10px white;*/
-        box-sizing: border-box; /* Include padding and border in element's width and height */
-        outline: solid #646464 1px;
-        outline-offset: -1px;
-    }
+}
 
-input.input-box:focus {
-  background-color:#f6fcfd;
-    border-color: #f6fcfd;  
+#registration-form input.input-box {
+  margin: 4px 0 12px 0;
 }
 
 /*checkbox label*/
@@ -358,6 +349,24 @@ section.sixtyforty-layout div.flex-column-60 {
   margin: 10px 10px;
 }
 /*desktop form styling*/
+  
+  input.input-box, select.dropdown-box {
+        border: 14px solid white;
+/*        box-shadow: inset 0px 0px 0px 10px white;*/
+        box-sizing: border-box; /* Include padding and border in element's width and height */
+        outline: solid #646464 1px;
+        outline-offset: -1px;
+    }
+
+input.input-box:focus {
+  background-color:#f6fcfd;
+    border-color: #f6fcfd;  
+}
+
+   input.full, select.full {
+      width:100%;
+/*      display:inline;*/
+    }
 	
 input[type="checkbox"] {
   -webkit-appearance: none;
@@ -535,11 +544,17 @@ section.sixtyforty-layout div.flex-column-40, section.sixtyforty-layout div.flex
 }
 /*
 mobile form styling
-input.input-box, input.input-box, select.dropdown {
+  
+  */
+  input.input-box {
+padding:16px 20px;
+}
+
+input.input-box, select.dropdown {
   min-width: 80vw;
   max-width: 90vw;
 }
-*/
+
 /***MOBILE PAGE SPECIFIC - SHOPPING CART STYLES****/
 .cart-wrapper {
   display: block;
@@ -838,10 +853,7 @@ height: 10px;
   margin-top:2px;
 }
 
- input.full, select.full {
-      width:100%;
-/*      display:inline;*/
-    }
+
     div.inline-half {
       display:inline;
       width:100%;
