@@ -544,16 +544,14 @@ section.sixtyforty-layout div.flex-column-40, section.sixtyforty-layout div.flex
   margin-bottom: 10px;
 }
 /*
-mobile form styling
-  
-  */
+mobile form styling  */
   input.input-box, select.dropdown-box {
-padding:16px 20px;
+padding:16px 14px;
 }
 
 input.input-box, select.dropdown {
-  min-width: 80vw;
-  max-width: 83vw;
+  min-width: 75vw;
+  max-width: 80vw;
 }
 
 /***MOBILE PAGE SPECIFIC - SHOPPING CART STYLES****/
