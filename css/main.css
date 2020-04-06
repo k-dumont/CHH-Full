@@ -492,18 +492,15 @@ width:50%;
 
 
   /*desktop specific checkout page*/
-/*
-   input.input-box.checkout, select.dropdown-box.checkout {
-    min-width:140px;
-  }
-*/
-  /*ACCOUNTING FOR DIFF WIDTH OF DROPDOWN BOX*/
-/*
-  select.dropdown-box {
-    width: 23vw;
+
+  #shippingDetails .cart-button-div .btn-main {
+top: -50px;
 }
-*/
-  
+   #orderDetails .cart-button-div .btn-main {
+top: -57px;
+}
+
+
 }
 
 /**********************MOBILE/TABLET ONLY********************/
@@ -828,6 +825,8 @@ height: 10px;
   font-size:.7em;
 }
 
+
+
  input.full, select.full {
       width:100%;
 /*      display:inline;*/
@@ -845,7 +844,12 @@ height: 10px;
 .flex-row.product-row div.blue-box {
     padding-bottom: 0;
 }
-
+.etransfer-div {
+  padding:10px 0 0;
+}
+.interac-logo {
+  padding-left:20px;
+}
 /*
 .checkout-totals-wrapper {
  width:100%;

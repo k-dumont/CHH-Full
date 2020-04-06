@@ -12,12 +12,11 @@
 <body>
 <section id="main-content" class="sixtyforty-layout">
     <h2>Checkout</h2>
-   <button class="btn-main">Return To Shop</button>
+  
  <div class="flex-row">
 
-
-
    <div class="flex-column-60" id="shippingDetails">
+     <div class="cart-button-div"><button class="btn-main">Return To Shop</button></div>
          <!--      SHIPPING ADDRESS START-->
                 <form name="shipping-details-form">
                          <h3 class="fontweight-light">Shipping Details</h3>
@@ -73,11 +72,16 @@
 
      </form>
    </div>
+
+
 <!--      SHIPPING ADDRESS END-->
          
        <div class="flex-column-40">
+         
+        
      <!--    CART TOTALS SECTION-->
   <section id="orderDetails">
+     <div class="cart-button-div"><a href="/cart.html"><button class="btn-main">Return To Cart</button></a></div>
       <h3 class="fontweight-light">Order Details</h3>
       
      <div class="flex-row product-row">
@@ -101,47 +105,27 @@
           <div class="flex-column-70 blue-box no-margin"><p class="order-details-p"><span class="uppercase"><strong>Full Spectrum CBD</strong></span><br>
 1,000 mg Full Spectrum CBD Oil<br>
 1 fl oz (30 mL) 250 mg CBD/CBDA<br>
-            10 mg THC (delta-9-THC</p> </div>
+            10 mg THC (delta-9-THC)</p> </div>
           <div class="flex-column-15 blue-box no-margin">2</div>
         <div class="flex-column-15 blue-box no-margin">$80.00</div>
        
       </div>
     
      <div class="flex-row">
-          <div class="flex-column-70 blue-box no-margin"><p class="order-details-p"><span class="uppercase"><strong>Full Spectrum CBD</strong></span><br>
-1,000 mg Full Spectrum CBD Oil<br>
-1 fl oz (30 mL) 250 mg CBD/CBDA<br>
-            10 mg THC (delta-9-THC</p> </div>
+          <div class="flex-column-70 blue-box no-margin"><p class="order-details-p"><span class="uppercase"><strong>Nighttime CBD</strong></span><br>
+1,500 mg Hemp-Derived CBD<br>
+1 fl oz (30 mL) </p> </div>
           <div class="flex-column-15 blue-box no-margin">2</div>
         <div class="flex-column-15 blue-box no-margin">$80.00</div>
        
-      </div>
-          <div class="flex-row product-row">
-       <div class="flex-column-70 blue-box no-margin">
-         <strong>Product</strong>
-       </div>
-        <div class="flex-column-15 blue-box no-margin"> <strong>Qty</strong></div>
-        <div class="flex-column-15 blue-box no-margin"> <strong>Total</strong></div>
-    </div>
-     <div class="flex-row product-row">
-          <div class="flex-column-70 blue-box no-margin"><p><span class="uppercase"><strong>Full Spectrum CBD</strong></span><br>
-1,000 mg Full Spectrum CBD Oil<br>
-1 fl oz (30 mL) 250 mg CBD/CBDA<br>
-            10 mg THC (delta-9-THC</p> </div>
-          <div class="flex-column-15 blue-box no-margin"> <strong>2</strong></div>
-        <div class="flex-column-15 blue-box no-margin"> <strong>$80.00</strong></div>
-       
+     
       </div>
          
-    <div class="cart-totals flex-row">
-        <div class="flex-column-half before-checkout-column no-margin"> <strong>Subtotal</strong> </div>
-        <div class="flex-column-half before-checkout-column no-margin"> $0.00 </div>
-      </div>
-      
+  
       
       <div class="cart-totals flex-row flex-column-full">
         <div class="flex-column-half before-checkout-column"> <strong>Subtotal</strong> </div>
-        <div class="flex-column-half before-checkout-column"> $0.00 </div>
+        <div class="flex-column-half before-checkout-column"> $240.00 </div>
       </div>
       <div class="cart-totals flex-row flex-column-full">
         <div class="flex-column-half before-checkout-column"> <strong>Shipping</strong> </div>
@@ -150,11 +134,12 @@
       </div>
       <div class="cart-totals flex-row flex-column-full">
         <div class="flex-column-half before-checkout-column"> <span><strong>Total</strong></span> </div>
-        <div class="flex-column-half before-checkout-column"> <span>$0.00</span> </div>
+        <div class="flex-column-half before-checkout-column"> <span>$240.00</span> </div>
       </div>
+    <div class="flex-row vert-center etransfer-div"><input type="radio" name="etransfer" value="etransfer" checked="checked"><label for="etransfer"><strong>Email Money Transfer</strong></label> <img src="img/Interac_e-Transfer_logo.png" width="60" class="interac-logo">
+    </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.593 69.296" class="yellow-arrow"><defs></defs><title>Yellow Arrow</title><g id="e60f27b7-29f1-4e17-9671-097bc535b056" data-name="Layer 2"><g id="a1a5f32a-41b3-405c-b6d3-529111dbe438" data-name="Layer 1"><polygon class="f2b6ec71-c2cf-45e4-98a2-3b85341dd17c" points="0 69.296 69.296 0 138.593 69.296 0 69.296"/></g></g></svg>
-    <div class="yellow-box">
-    <span class="font-size-sml">After placing your order you will receive instructions on how to complete your E-transfer payment.</span>
+    <div class="yellow-box"><span class="font-size-sml">After placing your order you will receive instructions on how to complete your E-transfer payment.</span>
     </div>
     
       <a href="/checkout"><button type="submit" class="btn-full margin-top-sml">Place Order</button>
