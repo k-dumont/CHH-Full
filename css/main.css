@@ -49,7 +49,7 @@ html {
 * {
   font-family: 'montserrat', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -93,6 +93,15 @@ body a:hover {
   font-weight: 500;
 }
 /**********GLOBAL GENERAL LAYOUT STYLES*********/
+hr.basic-divider {
+    border-bottom: solid 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #efefef;
+
+/*  margin-bottom: 10px;*/
+}
 
 hr.section-divider {
   border-bottom: solid 5px;
@@ -195,6 +204,9 @@ hr.section-divider {
 
 .margin-top-sml {
   margin-top:10px;
+}
+.margin-top-lrg {
+  margin-top:60px;
 }
 /****Global Button Styles*****/
 .btn-main {
@@ -641,19 +653,53 @@ p.legal-text {
 }
 /***********************PAGE SPECIFIC CLASSES - PRODUCT INDIVIDUAL***********************/
 
+ul.breadcrumb {
+  list-style: none;
+/*  background-color: #eee;*/
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: .8em;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #6B6B6B;
+  text-decoration: none;
+    font-weight: 200;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #99d2d9;
+/*  text-decoration: underline;*/
+}
+.breadcrumb li.current-page {
+  color:black;
+}
 
 .product-image {
   height: auto;
   width: 100%;
-  max-width: 100%;
+  max-width: 100%;p
 }
 .product-text-column {
-  padding: 40px;
-  font-size: .9em;
+/*  padding: 40px;*/
+  font-size: .8em;
 }
+/*
 .product-description {
   margin-bottom: 30px;
 }
+*/
 div.product-property {
   margin-bottom: 15px;
 }

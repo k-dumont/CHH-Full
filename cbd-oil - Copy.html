@@ -6,18 +6,36 @@
 	<title>Product Page</title>
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
-	<section id="main-content">
-		<div class="flex-row vert-center">
-  <div class="flex-column-half vert-center product-image-column">
-		<img src="img/CHH-GoldStandard_30ml-S-700px.png" class="product-image" alt=""/>
+<section id="main-content" class="sixtyforty-layout">
+  <ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/shop.html">Shop Products</a></li>
+  <li name="breadcrumb-product-type"><a href="#">CBD Oil</a></li>
+  <li name="breadcrumb-product-title" class="current-page">Morning CBD</li>
+</ul>
+  <hr class="basic-divider">
+<div class="flex-row margin-top-lrg">
+   <div class="flex-column-60 product-image-column" id="productImageColumn">
+<!--  <div class="flex-column-half vert-center product-image-column">-->
+		<img src="img/CHH-GoldStandard_30ml-S-1000px.png" class="product-image" alt=""/>
 	</div>
-   <div class="flex-column-half">
+   <div class="flex-column-40">
 		 <div class="product-text-column">
-		 <h2>Product Title</h2>
-		 <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       <h2 class="uppercase">Morning CBD</h2>
+       <h3>1,500 mg Hemp-Derived CBD</h3>
+       <span class="uppercase"><strong>Size:</strong></span> &nbsp; 1 fl oz (30 mL)
+       <hr class="basic-divider">
+       <strong>CBD + 5 Pure Essential Oils</strong>
+		   <ul>
+         <li>• Lemon</li>
+         <li>• Ginger</li>
+         <li>• Juniper</li>
+         <li>• Spearmint</li>
+         <li>• Bergamot</li>
+       </ul>
 		 		<div class="flex-row">
 					<div class="flex-column-half product-property"><strong>Property 1:</strong> lorem isum</div>
 					<div class="flex-column-half product-property"><strong>Property 2:</strong> lorem isum</div>
@@ -28,6 +46,19 @@
 					<div class="flex-column-half product-property"><strong>Property 4:</strong> lorem isum</div>
 
 		 </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.593 69.296" class="yellow-arrow">
+          <defs></defs>
+          <title>Yellow Arrow</title>
+          <g id="e60f27b7-29f1-4e17-9671-097bc535b056" data-name="Layer 2">
+            <g id="a1a5f32a-41b3-405c-b6d3-529111dbe438" data-name="Layer 1">
+              <polygon class="f2b6ec71-c2cf-45e4-98a2-3b85341dd17c" points="0 69.296 69.296 0 138.593 69.296 0 69.296"/>
+            </g>
+          </g>
+        </svg>
+        <div class="yellow-box"><span class="font-size-sml">After placing your order you will receive instructions on how to complete your E-transfer payment.</span> </div>
+        <a href="/checkout">
+        <button type="submit" class="btn-full margin-top-sml">Place Order</button>
+        </a>
 			 <div class="spacer-small"></div>
 <form id="add-to-cart">
 
