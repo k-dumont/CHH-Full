@@ -13,7 +13,7 @@
   <div class="cart-button-div cart-page">
     <button class="btn-main">Return To Shop</button>
   </div>
-  <h2>Shopping Cart</h2>
+  <h2 class="margin-btm-sml">Shopping Cart</h2>
   <!--  CART ITEM START-->
   <div class="cart-wrapper vert-center">
     <div class="cart-column cart-image-column"> <a href="#"><img src="img/CHH-GoldStandard_30ml-S-thumb.png" alt="" class="product-in-cart"/></a> </div>
@@ -23,15 +23,15 @@
       <span> 1 fl oz (30 mL) 250 mg CBD/CBDA</span><br>
       <span>10 mg THC (del ta-9-THC)</span> </div>
     <div class="cart-column item-number-column">
-      <form>
+   
         <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
+          <div class="plus-minus" name="remove-item"> <span>-</span> </div>
           </a>
           <input class="number-of-items" type="text" name="number_of_items" value="1">
           <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
+          <div class="plus-minus" name="add-item"> <span>+</span> </div>
           </a> </div>
-      </form>
+
     </div>
     <div class="cart-column cart-button-column">
       <button type="submit" class="btn-small">Remove From Cart</button>
@@ -49,15 +49,13 @@
       <span>1 fl o z (30 mL)</span><br>
       <span>1,200 mg THC (del ta-9-THC)</span> </div>
     <div class="cart-column item-number-column">
-      <form>
-        <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
+ <div class="plus-minus-wrapper"><a href="#">
+          <div class="plus-minus" name="remove-item"> <span>-</span> </div>
           </a>
           <input class="number-of-items" type="text" name="number_of_items" value="1">
           <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
+          <div class="plus-minus" name="add-item"> <span>+</span> </div>
           </a> </div>
-      </form>
     </div>
     <div class="cart-column cart-button-column">
       <button type="submit" class="btn-small">Remove From Cart</button>
@@ -74,15 +72,13 @@
       <span> 1 fl oz (30 mL) 250 mg CBD/CBDA</span><br>
       <span>10 mg THC (del ta-9-THC)</span> </div>
     <div class="cart-column item-number-column">
-      <form>
-        <div class="plus-minus-wrapper"><a href="#">
-          <div class="plus-minus"> <span>-</span> </div>
+    <div class="plus-minus-wrapper"><a href="#">
+          <div class="plus-minus" name="remove-item"> <span>-</span> </div>
           </a>
           <input class="number-of-items" type="text" name="number_of_items" value="1">
           <a href="#">
-          <div class="plus-minus"> <span>+</span> </div>
+          <div class="plus-minus" name="add-item"> <span>+</span> </div>
           </a> </div>
-      </form>
     </div>
     <div class="cart-column cart-button-column">
       <button type="submit" class="btn-small">Remove From Cart</button>
@@ -113,12 +109,10 @@
       <a href="/checkout"><button type="submit" class="btn-full margin-top-sml">Proceed to checkout </button>
       </a> </div>
     <div class="also-interested-div">
-      <h3 class="fontweight-light">You May Also Be Interested in</h3>
+      <h3 class="fontweight-light">You may also be interested in:</h3>
       <a href="#"> <div class="flex-row vert-center">
-        <div class="flex-column-third vert-center product-image-column"> <img src="img/DaytimeCBD-30mL-thumb.png" class="product-image" alt=""/> </div>
-        <div class="flex-column-2thirds"> <span><strong>Morning CBD</strong><br>
-          1,500 mg Hemp-Derived CBD<br>
-          1 fl o z (30 mL)</span> </div>
+        <div class="vert-center"> <img src="img/DaytimeCBD-30mL-thumb.png" alt=""/> </div>
+        <div> <span class="uppercase"><strong>Morning CBD</strong></span><br><span>1,500 mg Hemp-Derived CBD</span><br><span>1 fl o z (30 mL)</span></div>
       </div></a>
     </div>
   </div>
