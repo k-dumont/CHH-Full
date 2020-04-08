@@ -70,7 +70,7 @@ h3 {
 h4 {
   font-size: 1.2em;
 }
-h5 {
+h5 {b
   font-size: 1.1em;
 }
 .italic {
@@ -678,7 +678,7 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: .8em;
+/*  font-size: .8em;*/
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -719,11 +719,9 @@ ul.breadcrumb li a:hover {
   margin-bottom: 30px;
 }
 */
-div.product-property {
-  margin-bottom: 15px;
-}
-div.product-property {
-  margin-bottom: 15px;
+.product-description-intro {
+  padding:16px 0;
+  
 }
 a.black-underline {
   text-decoration: underline;
@@ -741,7 +739,7 @@ section.product-page input.number-of-items {
 /*product accordian tabs*/
 /* Style the buttons that are used to open and close the accordion panel */
 .product-description-accordion {
-  background-color: #eee;
+  background-color: #eaf6f7;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -750,6 +748,7 @@ section.product-page input.number-of-items {
   border: none;
   outline: none;
   transition: 0.4s;
+  margin:1px 0;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -759,13 +758,13 @@ section.product-page input.number-of-items {
 
 /*panel for description above accordion tabls*/
 .product-non-accordion-panel {
-    padding: 16px 0px;
+    padding:16px 16px;
   background-color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .product-description-panel {
-    padding:16px 0px;
+    padding:16px 16px;
   background-color: white;
   overflow: hidden;
   display:none;
@@ -773,7 +772,7 @@ section.product-page input.number-of-items {
 }
 .product-description-accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  font-size: 8px;
   color: #777;
   float: right;
   margin-left: 5px;
@@ -782,6 +781,33 @@ section.product-page input.number-of-items {
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+
+/*product ingredients*/
+  section#productIngredients {
+     max-width:450px; 
+      font-size:.75em;
+    }
+    div#ingredientOuterBox {
+      border-top:solid black 2px;
+      border-bottom:solid black 2px;
+/*            padding:6px 0;*/
+      margin:6px 0;
+    }
+    span.ingredient-group-item {
+      margin-left:20px;
+    }
+    .flex-row-ingredients {
+      display:flex;
+      border-bottom:solid black 1px;
+      padding:4px 0px;
+    }
+    
+    div[title="amtPerServing"], div[title="%DailyValue"] {
+      text-align:right;
+      margin-left:12px;
+    }
+    
 
 /***********************PAGE SPECIFIC CLASSES - SHOPPING CART***********************/
 
