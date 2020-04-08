@@ -17,10 +17,19 @@
   <li name="breadcrumb-product-title" class="current-page">Morning CBD</li>
 </ul>
   <hr class="basic-divider">
+<!--
+  flex wrapper around entire 60 - 40 layout
+-->
 <div class="flex-row margin-top-lrg">
    <div class="flex-column-60 product-image-column" id="productImageColumn">
 <!--  <div class="flex-column-half vert-center product-image-column">-->
-		<img src="img/CHH-GoldStandard_30ml-S-1000px.png" class="product-image" alt=""/>
+		<div class="flex-row">
+      <div class="main-product-image">
+        <img src="img/MorningCBD-30mL-1000px.png" class="product-image" alt=""/></div>
+     </div>
+     <div class="flex-row vert-center" id="productImageSlider">
+       <div class="slider-navigation-left">&#8592;</div><div><img src="img/MorningCBD-30mL-thumb.png" alt=""></div><div><img src="img/MorningCBD-30mL-thumb.png" alt="" class="active-img"></div><div><img src="img/MorningCBD-30mL-thumb.png" alt=""></div><div class="slider-nav-right"><i class="fas fa-arrow-right"></i></div>
+                         </div>                
 	</div>
    <div class="flex-column-40">
        <h2 class="uppercase">Morning CBD</h2>
@@ -143,10 +152,9 @@ Organic MCTs (Medium-chain triglycerides) from Coconut Oil
      
   </div>
 
-
-
      
-	</div>
+	</div> <!--closing flex wrapper around entire 60 - 40 layout
+-->
 
 	</section>
 	</body>

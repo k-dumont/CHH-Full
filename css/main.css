@@ -703,12 +703,34 @@ ul.breadcrumb li a:hover {
 .breadcrumb li.current-page {
   color:black;
 }
-
+div.main-product-image {
+  
+}
 .product-image {
   height: auto;
   width: 100%;
   max-width: 100%;
+  justify-content:center;
+  text-align:center;
 }
+
+/*product image slider*/
+div#productImageSlider {
+  justify-content:center;
+}
+#productImageSlider div {
+  
+}
+
+#productImageSlider img {
+    width: 130px;
+}
+img.active-img {
+    border:solid 1px black;
+}
+
+
+
 /*
 .product-text-column {
   font-size: .8em;
