@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
-<section id="main-content" class="sixtyforty-layout">
+<section id="main-content" class="sixtyforty-layout product-page">
   <ul class="breadcrumb">
   <li><a href="/index.html">Home</a></li>
   <li><a href="/shop.html">Shop Products</a></li>
@@ -28,6 +28,7 @@
        <h3>1,500 mg Hemp-Derived CBD</h3>
        <span class="uppercase"><strong>Size:</strong></span> &nbsp; 1 fl oz (30 mL)
        <hr class="basic-divider">
+       <div class="product-non-accordion-panel">
        <strong>CBD + 5 Pure Essential Oils</strong>
 		   <ul>
          <li>• Lemon</li>
@@ -36,11 +37,11 @@
          <li>• Spearmint</li>
          <li>• Bergamot</li>
        </ul>
-		 		
+       </div>
        <div class="plus-minus-wrapper"><a href="#">
           <div class="plus-minus" name="remove-item"> <span>-</span> </div>
           </a>
-          <input class="number-of-items" type="text" name="number_of_items" value="1">
+          <input class="number-of-items" type="text" name="number_of_items" value="8">
           <a href="#">
           <div class="plus-minus" name="add-item"> <span>+</span> </div>
           </a> </div>
@@ -56,21 +57,64 @@
         </svg>
        <div class="yellow-box center">FREE Shipping with $149+ Purchase <a href="#" class="black-underline">READ MORE</a> </div>
         <a href="/checkout">
-        <button type="submit" class="btn-full margin-top-sml">Place Order</button>
+        <button type="submit" class="btn-full margin-top-sml">Add to Cart</button>
         </a>
-			 <div class="spacer-small"></div>
-<form id="add-to-cart">
+       <div class="product-non-accordion-panel">
+       <h6>More About This Product</h6>
+       <p name="productDescription">Awaken your mind and body with our MORNING CBD oil. This oil
+combines the power of CBD with 5 key essential oils in a naturally
+uplifting and energizing formula that’s designed to be taken first thing
+in the morning. When CBD is consumed in the morning, it interacts
+with the endocannabinoid system (ECS) and provides a boost in
+         cognitive function, while reducing anxiety and ‘brain fog’.</p>
 
-		  <input class="item-number-input" type="text" name="number_of_items" value="1">	<label class="item-number-label">Purchase by the gram</label>
+<ul>
+  <li>◆ Naturally Uplifting &amp; Energizing</li>
+  <li>◆ Boosts Cognitive Function</li>
+  <li>◆ Reduces Anxiety &amp; ‘Brain Fog’</li>
+       </ul>
+         
+       </div>
+<button class="product-description-accordion">Why Choose This Product</button>
+<div class="product-description-panel">
+  <p>Lorem ipsum...</p>
+</div>
+              <button class="product-description-accordion">Recommended Use</button>
+<div class="product-description-panel">
+  <p>Lorem ipsum...</p>
+</div>
+       <button class="product-description-accordion">Ingredients</button>
+<div class="product-description-panel">
+  <p>Lorem ipsum...</p>
+</div>
 
-<br>
-	<br>
-		<button type="submit" class="btn-main">Add to Cart</button>
-</form>
+
 			     </div>
+     
 	</div>
 </div>
 	</section>
 	</body>
-</html>
 
+<script>
+var acc = document.getElementsByClassName("product-description-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+  
+  </html>

@@ -18,9 +18,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+/*
 body {
   line-height: 1.2;
 }
+*/
 ol, ul {
   list-style: none;
 }
@@ -87,10 +89,12 @@ body a {
 body a:hover {
   color: #97d2da;
 }
-#main-content p {
-  line-height: 1.6em;
+body p, body ul {
+  line-height: 1.3em;
   color: #1F1F20;
   font-weight: 500;
+    letter-spacing: .03em;
+  font-size:13px;
 }
 /**********GLOBAL GENERAL LAYOUT STYLES*********/
 hr.basic-divider {
@@ -266,7 +270,7 @@ text-align: center;
   /*	margin:4px 4px 0 0;*/
   cursor: pointer;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 .btn-full:hover {
@@ -705,10 +709,11 @@ ul.breadcrumb li a:hover {
   width: 100%;
   max-width: 100%;
 }
+/*
 .product-text-column {
-/*  padding: 40px;*/
   font-size: .8em;
 }
+*/
 /*
 .product-description {
   margin-bottom: 30px;
@@ -727,6 +732,57 @@ a.black-underline {
 a.black-underline:hover {
   color:#898989;
 }
+section.product-page input.number-of-items {
+   border: 1px solid black;
+  }
+
+
+
+/*product accordian tabs*/
+/* Style the buttons that are used to open and close the accordion panel */
+.product-description-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .product-description-accordion:hover {
+  background-color: #ccc;
+}
+
+/*panel for description above accordion tabls*/
+.product-non-accordion-panel {
+    padding: 16px 0px;
+  background-color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.product-description-panel {
+    padding:16px 0px;
+  background-color: white;
+  overflow: hidden;
+  display:none;
+  transition: max-height 0.2s ease-out;
+}
+.product-description-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /***********************PAGE SPECIFIC CLASSES - SHOPPING CART***********************/
 
 /*media queries for cart totals box*/
@@ -784,7 +840,6 @@ div.plus-minus {
 }
 input.number-of-items {
 width: 18px;
-    border: 1px;
     /* padding-left: 6px; */
     /* padding-right: 4px; */
     width: 32px;
