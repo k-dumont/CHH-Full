@@ -50,11 +50,12 @@ html {
 /*Global Fonts*/
 * {
   font-family: 'montserrat', sans-serif;
+      letter-spacing: .02em;
 }
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h3, h4, h5, h6, h7, p, ul {
   margin-bottom: 10px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, h7 {
   line-height: 1.1em;
 }
 h1 {
@@ -65,13 +66,24 @@ h2 {
   font-size: 2.2em;
 }
 h3 {
+    font-weight: 600;
   font-size: 1.4em;
 }
 h4 {
+      font-weight: 600;
   font-size: 1.2em;
 }
-h5 {b
+h5 {
+      font-weight: 600;
   font-size: 1.1em;
+}
+h6 {
+      font-weight: 600;
+  font-size: 1em;
+}
+h7 {
+      font-weight: 500;
+  font-size: .9em;
 }
 .italic {
   font-style: italic;
@@ -126,6 +138,10 @@ hr.section-divider {
 }
 
 /*KAT MOVED THIS FROM DESKTOP ONLY. MOVE BACK IF IT FUCKS WITH THINGS*/
+.vert-center {
+  align-items: center;
+}
+
 .flex-column-cart-full {
   width: 100%;
 }
@@ -343,13 +359,22 @@ input[type="checkbox"] {
     font-size: 14px;
 	}
 */
+/**********section#main-content PADDING STYLES*********/
+@media screen and (min-width: 900px) and (max-width:1200px) {
+section#main-content {
+  padding: 10% 6% 8%;
+}
+}
+  @media screen and (min-width: 1201px) {
+section#main-content {
+  padding: 10% 11% 8%;
+}
+}
 
 /**********************DESKTOP ONLY********************/
 @media screen and (min-width: 900px) {
 /**********DESKTOP GENERAL LAYOUT STYLES*********/
-section#main-content {
-  padding: 10% 11% 8%;
-}
+
 .flex-row {
   display: flex;
 }
@@ -362,9 +387,6 @@ section.sixtyforty-layout div.flex-column-60 {
   
 */
   
-.vert-center {
-  align-items: center;
-}
 .text-column {
   padding: 60px;
 }
@@ -492,7 +514,7 @@ right:0px;
 width:50%;
 }
 */
-/*****DESKTOP SPECIFIC - MY ACCOUNT********/
+/*****DESKTOP SPECIFIC - MY ACCOUNT PAGE********/
 .account-sidebar {
   border-right: solid 1px #C2C2C2;
   width: 170px;
@@ -533,14 +555,18 @@ width:50%;
   
 */
   
-/*destop specific - my orders page*/
+/*****DESKTOP SPECIFIC - MY ORDERS PAGE********/
 .my-orders-title-wrapper, .my-orders-items-wrapper {
   display: flex;
 }
-/*
+  
+  /*****DESKTOP SPECIFIC - PRODUCT INDIVIDUAL PAGE********/
+  div.product-wrapper {
+  margin-top:60px;
+}
+  
 
-
-  /*desktop specific checkout page*/
+/*****DESKTOP SPECIFIC - CHECKOUT PAGE********/
 
   #shippingDetails .cart-button-div .btn-main {
 top: -50px;
@@ -589,8 +615,15 @@ input.input-box, select.dropdown {
   min-width: 75vw;
   max-width: 80vw;
 }
+  
+  
+ /***MOBILE SPECIFIC - PRODUCT PAGE STYLES****/ 
+  div#productImageSlider {
+    display: flex;
+    margin-bottom:40px;
+}
 
-/***MOBILE PAGE SPECIFIC - SHOPPING CART STYLES****/
+/***MOBILE SPECIFIC - SHOPPING CART STYLES****/
 .cart-wrapper {
   display: block;
 }
@@ -728,21 +761,25 @@ div#productImageSlider {
 img.active-img {
     border:solid 1px black;
 }
-
+.slider-nav-left, .slider-nav-right {
+    font-size: 23px;
+  font-weight:300;
+  color:black;
+}
 
 
 /*
 .product-text-column {
   font-size: .8em;
 }
-*/
+*/fl
 /*
 .product-description {
   margin-bottom: 30px;
 }
 */
 .product-description-intro {
-  padding:16px 0;
+padding: 4px 0;
   
 }
 a.black-underline {
@@ -771,6 +808,9 @@ section.product-page input.number-of-items {
   outline: none;
   transition: 0.4s;
   margin:1px 0;
+  text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .03em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -798,6 +838,7 @@ section.product-page input.number-of-items {
   color: #777;
   float: right;
   margin-left: 5px;
+  margin-top: 3px;
 }
 
 .active:after {
@@ -811,7 +852,7 @@ section.product-page input.number-of-items {
       font-size:.75em;
     }
     div#ingredientOuterBox {
-      border-top:solid black 2px;
+      border-top: solid black 3px;
       border-bottom:solid black 2px;
 /*            padding:6px 0;*/
       margin:6px 0;
@@ -872,8 +913,8 @@ div.plus-minus-wrapper {
   display: flex;
 }
 div.plus-minus span {
-  width: 30px;
-  height: 30px;
+width: 35px;
+    height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -887,10 +928,7 @@ div.plus-minus {
   font-weight: bold;
 }
 input.number-of-items {
-width: 18px;
-    /* padding-left: 6px; */
-    /* padding-right: 4px; */
-    width: 32px;
+    width: 35px;
     background-color: #fff;
     border-radius: 0;
     display: flex;
