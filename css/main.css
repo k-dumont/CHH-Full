@@ -50,12 +50,12 @@ html {
 /*Global Fonts*/
 * {
   font-family: 'montserrat', sans-serif;
-      letter-spacing: .02em;
+      letter-spacing: 0.02em;
 }
-h1, h2, h3, h4, h5, h6, h7, p, ul {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 10px;
 }
-h1, h2, h3, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6{
   line-height: 1.1em;
 }
 h1 {
@@ -63,7 +63,7 @@ h1 {
 }
 h2 {
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 1.8em;
 }
 h3 {
     font-weight: 600;
@@ -81,10 +81,12 @@ h6 {
       font-weight: 600;
   font-size: 1em;
 }
-h7 {
-      font-weight: 500;
-  font-size: .9em;
+
+.subhead {
+  font-size:1.7em;
+  line-height:1em;
 }
+
 .italic {
   font-style: italic;
 }
@@ -105,7 +107,7 @@ body p, body ul {
   line-height: 1.3em;
   color: #1F1F20;
   font-weight: 500;
-    letter-spacing: .03em;
+/*    letter-spacing: .03em;*/
   font-size:13px;
 }
 /**********GLOBAL GENERAL LAYOUT STYLES*********/
@@ -192,6 +194,9 @@ hr.section-divider {
 }
 .font-size-sml {
   font-size: .8em;
+}
+.font-size-med {
+  font-size: 1.2em;
 }
 .font-size-lrg {
   font-size: 2em;
@@ -772,7 +777,7 @@ img.active-img {
 .product-text-column {
   font-size: .8em;
 }
-*/fl
+*/
 /*
 .product-description {
   margin-bottom: 30px;
@@ -810,7 +815,7 @@ section.product-page input.number-of-items {
   margin:1px 0;
   text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: .03em;
+/*    letter-spacing: .03em;*/
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
