@@ -686,8 +686,9 @@ height: 50px;
   }
   
   input.number-of-items {
- width: 33px!important;
-    padding: 0px;
+ width: 18px;
+    padding-left: 8px;
+        padding-right: 8px;
   }
 /*
   .before-checkout-column {
