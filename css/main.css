@@ -198,6 +198,9 @@ hr.section-divider {
 .font-size-med {
   font-size: 1.2em;
 }
+.font-size-medmed {
+  font-size: 1em;
+}
 .font-size-lrg {
   font-size: 2em;
 }
@@ -645,6 +648,7 @@ input.input-box, select.dropdown {
       select#provinces {
     min-width: 81vw;
   max-width: 83vw;
+height: 50px;
   }
   
   
@@ -682,7 +686,8 @@ input.input-box, select.dropdown {
   }
   
   input.number-of-items {
-    width: 32px;
+ width: 33px!important;
+    padding: 0px;
   }
 /*
   .before-checkout-column {
