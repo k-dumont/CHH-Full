@@ -387,6 +387,10 @@ section#main-content {
 section.sixtyforty-layout div.flex-column-60 {
  margin-right:40px;
   } 
+  
+  br.mobile-only {
+    display:none;
+  }
 /*
  KAT all the flex columns used to be here - moved to all screen styles
   
@@ -573,6 +577,9 @@ width:50%;
    .product-non-accordion-panel, .product-description-panel {
     padding: 16px 16px;
   }
+  #productImageSlider img {
+    width: 130px;
+}
   
 
 /*****DESKTOP SPECIFIC - CHECKOUT PAGE********/
@@ -599,6 +606,12 @@ top: -58px;
 section#main-content {
   padding: 15px 25px 35px;
 }
+  body p {
+    font-size:15px;
+  }
+  br.mobile-only {
+    display:inline;
+  }
 .flex-column-half {
   display: block;
 }
@@ -640,6 +653,9 @@ input.input-box, select.dropdown {
   .product-non-accordion-panel, .product-description-panel  {
     padding: 16px 0px;
   }
+    #productImageSlider img {
+    width: 90px;
+}
 
 /***MOBILE SPECIFIC - SHOPPING CART STYLES****/
 .cart-wrapper {
@@ -769,13 +785,7 @@ div.main-product-image {
 div#productImageSlider {
   justify-content:center;
 }
-#productImageSlider div {
-  
-}
 
-#productImageSlider img {
-    width: 130px;
-}
 img.active-img {
     border:solid 1px black;
 }
