@@ -617,9 +617,11 @@ top: -58px;
 section#main-content {
   padding: 15px 25px 35px;
 }
-  body p {
-    font-size:15px;
+  body p, body ul {
+    font-size:16px;
+    line-height:1.3em;
   }
+  
   br.mobile-only {
     display:inline;
   }
