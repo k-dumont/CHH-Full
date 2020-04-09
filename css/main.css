@@ -659,6 +659,7 @@ input.input-box, select.dropdown {
     min-width: 81vw;
   max-width: 83vw;
 height: 50px;
+        background-color:white!important;
   }
   
   
