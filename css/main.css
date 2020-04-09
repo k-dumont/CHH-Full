@@ -591,6 +591,10 @@ width:50%;
   #productImageSlider img {
     width: 130px;
 }
+      div[title="amtPerServing"], div[title="%DailyValue"] {
+          margin-left:12px;
+    }
+
   
 
 /*****DESKTOP SPECIFIC - CHECKOUT PAGE********/
@@ -669,6 +673,12 @@ height: 50px;
   }
     #productImageSlider img {
     width: 90px;
+}
+  .product-description-accordion {
+    font-size:16px;
+  }
+  div[title="amtPerServing"], div[title="%DailyValue"] {
+    margin-left: 5px;
 }
 
 /***MOBILE SPECIFIC - SHOPPING CART STYLES****/
@@ -919,9 +929,7 @@ section.product-page input.number-of-items {
     
     div[title="amtPerServing"], div[title="%DailyValue"] {
       text-align:right;
-      margin-left:12px;
     }
-    
 
 /***********************PAGE SPECIFIC CLASSES - SHOPPING CART***********************/
 
