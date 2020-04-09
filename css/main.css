@@ -487,6 +487,10 @@ input[type="checkbox"]:disabled {
    input.number-of-items {
     width: 35px;
   }
+    div.plus-minus span {
+    width: 35px;
+    height: 35px;
+  }
 .cart-button-div button.btn-main {
   position: absolute;
   right: 0;
@@ -689,6 +693,10 @@ height: 50px;
  width: 18px;
     padding-left: 8px;
         padding-right: 8px;
+  }
+  div.plus-minus span {
+    width: 33px;
+    height: 33px;
   }
 /*
   .before-checkout-column {
