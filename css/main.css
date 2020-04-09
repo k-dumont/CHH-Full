@@ -570,6 +570,10 @@ width:50%;
   margin-top:60px;
 }
   
+   .product-non-accordion-panel, .product-description-panel {
+    padding: 16px 16px;
+  }
+  
 
 /*****DESKTOP SPECIFIC - CHECKOUT PAGE********/
 
@@ -633,6 +637,9 @@ input.input-box, select.dropdown {
     display: flex;
     margin-bottom:40px;
 }
+  .product-non-accordion-panel, .product-description-panel  {
+    padding: 16px 0px;
+  }
 
 /***MOBILE SPECIFIC - SHOPPING CART STYLES****/
 .cart-wrapper {
@@ -727,8 +734,8 @@ ul.breadcrumb li {
 
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
+  padding: 4px;
+  color: #6B6B6B;
   content: "/\00a0";
 }
 
@@ -831,13 +838,12 @@ section.product-page input.number-of-items {
 
 /*panel for description above accordion tabls*/
 .product-non-accordion-panel {
-    padding:16px 16px;
+/*    padding:16px 16px;*/
   background-color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .product-description-panel {
-    padding:16px 16px;
   background-color: white;
   overflow: hidden;
   display:none;
