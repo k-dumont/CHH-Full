@@ -620,6 +620,12 @@ input.input-box, select.dropdown {
   min-width: 75vw;
   max-width: 80vw;
 }
+
+      select#provinces {
+    min-width: 81vw;
+  max-width: 83vw;
+  }
+  
   
   
  /***MOBILE SPECIFIC - PRODUCT PAGE STYLES****/ 
@@ -880,7 +886,6 @@ section.product-page input.number-of-items {
 /***********************PAGE SPECIFIC CLASSES - SHOPPING CART***********************/
 
 /*media queries for cart totals box*/
-
 @media only screen and (max-width: 1200px) and (min-width: 900px) {
 .cart-totals-wrapper {
   width: 320px;
@@ -1003,6 +1008,55 @@ input.cart-item-number-input {
     color:black;
     font-weight:400;
   }
+
+/***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
+
+.yellow-box {
+  background-color:#ffde7b;
+    padding: 8px 16px;
+  font-size:.8em;
+}
+svg.yellow-arrow {
+height: 10px;
+    transform: translateY(7px) translateX(16px);
+}
+.f2b6ec71-c2cf-45e4-98a2-3b85341dd17c{fill:#ffde7b;}
+#orderDetails div{
+  text-align:left;
+  font-size:.9em;
+}
+#shippingDetails .form-label {
+  font-size:.7em;
+}
+
+.margin-2 {
+  margin-top:2px;
+}
+
+
+.order-details-p {
+  font-size:.9em;
+}
+.flex-column-10.blue-box.no-margin {
+    text-align: center!important;
+}
+.flex-row.product-row div.blue-box {
+    padding-bottom: 0;
+}
+.etransfer-div {
+  padding:10px 0 0;
+}
+.interac-logo {
+  padding-left:2%;
+  width:60px;
+  height:auto;
+}
+/*
+.checkout-totals-wrapper {
+ width:100%;
+}
+*/
+
 /***********************PAGE SPECIFIC CLASSES - ABOUT***********************/
 ul.about-the-name li {
   padding: 30px 60px 0px;
@@ -1067,50 +1121,4 @@ span.about-the-name-box {
   ;
 }
 
-
-
-/***********************PAGE SPECIFIC CLASSES - CHECKOUT***********************/
-
-.yellow-box {
-  background-color:#ffde7b;
-    padding: 8px 16px;
-  font-size:.8em;
-}
-svg.yellow-arrow {
-height: 10px;
-    transform: translateY(7px) translateX(16px);
-}
-.f2b6ec71-c2cf-45e4-98a2-3b85341dd17c{fill:#ffde7b;}
-#orderDetails div{
-  text-align:left;
-  font-size:.9em;
-}
-#shippingDetails .form-label {
-  font-size:.7em;
-}
-
-.margin-2 {
-  margin-top:2px;
-}
-
-
-.order-details-p {
-  font-size:.9em;
-}
-.flex-row.product-row div.blue-box {
-    padding-bottom: 0;
-}
-.etransfer-div {
-  padding:10px 0 0;
-}
-.interac-logo {
-  padding-left:2%;
-  width:60px;
-  height:auto;
-}
-/*
-.checkout-totals-wrapper {
- width:100%;
-}
-*/
   
