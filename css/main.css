@@ -824,6 +824,11 @@ div#productImageSlider {
 img.active-img {
     border:solid 1px black;
 }
+
+img.two-image-slider {
+      margin-right: 90px;
+}
+
 .slider-nav-left, .slider-nav-right {
     font-size: 23px;
   font-weight:300;
