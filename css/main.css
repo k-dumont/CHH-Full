@@ -147,9 +147,12 @@ hr.section-divider {
 .flex-column-cart-full {
   width: 100%;
 }
+/*
 .flex-column-half {
   width: 50%;
 }
+*/
+
 .flex-column-third {
   width: 33%;
 }
@@ -385,6 +388,9 @@ section#main-content {
 
 .flex-row {
   display: flex;
+}
+  .flex-column-half {
+  width: 50%;
 }
 
 section.sixtyforty-layout div.flex-column-60 {
