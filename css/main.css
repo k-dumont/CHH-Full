@@ -371,7 +371,7 @@ input[type="checkbox"] {
 	}
 */
 /**********section#main-content PADDING STYLES*********/
-@media screen and (min-width: 900px) and (max-width:1200px) {
+@media screen and (min-width: 851px) and (max-width:1200px) {
 section#main-content {
   padding: 10% 6% 8%;
 }
@@ -383,7 +383,7 @@ section#main-content {
 }
 
 /**********************DESKTOP ONLY********************/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 851px) {
 /**********DESKTOP GENERAL LAYOUT STYLES*********/
 
 .flex-row {
@@ -622,7 +622,7 @@ top: -58px;
 }
 
 /**********************MOBILE/TABLET ONLY********************/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
 /**********MOBILE GENERAL LAYOUT STYLES*********/
 section#main-content {
   padding: 15px 25px 35px;
@@ -706,6 +706,10 @@ height: 50px;
   .cart-totals-wrapper {
     margin-top:40px;
     margin-bottom:80px;
+  }
+  
+  .flex-column-half.before-checkout-column {
+    width:50%;
   }
   
   input.number-of-items {
@@ -946,7 +950,7 @@ section.product-page input.number-of-items {
 /***********************PAGE SPECIFIC CLASSES - SHOPPING CART***********************/
 
 /*media queries for cart totals box*/
-@media only screen and (max-width: 1200px) and (min-width: 900px) {
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
 .cart-totals-wrapper {
   width: 320px;
 }
